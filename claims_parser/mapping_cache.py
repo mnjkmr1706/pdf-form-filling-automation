@@ -18,7 +18,7 @@ from claims_parser.mapping_cache_models import (
     CacheIndex,
     CacheIndexEntry,
 )
-from claims_parser.mapping_models import WidgetMapping
+from claims_parser.mapping_models import WidgetBinding, WidgetMapping
 from claims_parser.schema_models import FormSchema
 from claims_parser.widget_models import Widget, WidgetCatalog
 
@@ -156,7 +156,7 @@ def _build_xref_lookup(catalog: WidgetCatalog) -> dict[tuple[str, str], int]:
     return out
 
 
-def _rebind_one(binding, lookup_table: dict[tuple[str, str], int]) -> Optional[int]:
+def _rebind_one(binding: WidgetBinding, lookup_table: dict[tuple[str, str], int]) -> Optional[int]:
     key_specific = (binding.widget_field_name, binding.on_value or "")
     if key_specific in lookup_table:
         return lookup_table[key_specific]
@@ -170,7 +170,7 @@ def rebind_to_current_xrefs(
     mapping: WidgetMapping,
     schema: FormSchema,
     catalog: WidgetCatalog,
-):
+) -> Optional[tuple[WidgetMapping, FormSchema]]:
     table = _build_xref_lookup(catalog)
     new_bindings = []
     for b in mapping.bindings:
