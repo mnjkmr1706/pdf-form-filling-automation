@@ -8,6 +8,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -70,6 +71,12 @@ def compute_form_fingerprint(catalog: WidgetCatalog) -> str:
     return hashlib.sha256(blob).hexdigest()
 
 
+def _atomic_write_text(path: Path, content: str) -> None:
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(content)
+    os.replace(tmp, path)
+
+
 def _repo_root() -> Path:
     return Path(__file__).resolve().parent.parent
 
@@ -103,12 +110,14 @@ def _load_index() -> CacheIndex:
         return CacheIndex(entries=[])
     try:
         return CacheIndex.model_validate_json(p.read_text())
-    except Exception:
+    except (json.JSONDecodeError, ValueError, OSError) as e:
+        print(f"! mapping_cache: ignoring malformed index at {p} ({type(e).__name__}: {e})",
+              file=sys.stderr)
         return CacheIndex(entries=[])
 
 
 def _write_index(index: CacheIndex) -> None:
-    _index_path().write_text(index.model_dump_json(indent=2))
+    _atomic_write_text(_index_path(), index.model_dump_json(indent=2))
 
 
 def store(
@@ -126,9 +135,9 @@ def store(
         mapping=mapping,
         form_schema=schema,
     )
-    _cached_path(fingerprint).write_text(cached.model_dump_json(indent=2))
-    _mapping_path(fingerprint).write_text(mapping.model_dump_json(indent=2))
-    _schema_path(fingerprint).write_text(schema.model_dump_json(indent=2))
+    _atomic_write_text(_cached_path(fingerprint), cached.model_dump_json(indent=2))
+    _atomic_write_text(_mapping_path(fingerprint), mapping.model_dump_json(indent=2))
+    _atomic_write_text(_schema_path(fingerprint), schema.model_dump_json(indent=2))
 
     index = _load_index()
     index.entries = [e for e in index.entries if e.form_fingerprint != fingerprint]
@@ -147,5 +156,7 @@ def lookup(catalog: WidgetCatalog) -> Optional[CachedMapping]:
         return None
     try:
         return CachedMapping.model_validate_json(p.read_text())
-    except Exception:
+    except (json.JSONDecodeError, ValueError, OSError) as e:
+        print(f"! mapping_cache: ignoring malformed cache entry at {p} ({type(e).__name__}: {e})",
+              file=sys.stderr)
         return None
