@@ -124,6 +124,108 @@ def test_store_then_lookup_roundtrip():
             os.environ.pop("PDF_PARSER_MAPPINGS_DIR", None)
 
 
+def _binding(field_name, xref, on_value=None, semantic_id="x", page=1):
+    from claims_parser.mapping_models import WidgetBinding
+    return WidgetBinding(
+        widget_field_name=field_name,
+        widget_xref=xref,
+        semantic_field_id=semantic_id,
+        label_text="L",
+        label_source="text_line",
+        label_polygon=None,
+        label_page=page,
+        confidence=0.9,
+        reasoning="r",
+        option_label=None,
+        on_value=on_value,
+    )
+
+
+def test_rebind_updates_xrefs_by_field_name():
+    from claims_parser.mapping_cache import rebind_to_current_xrefs
+    from claims_parser.mapping_models import WidgetMapping
+    from claims_parser.schema_models import FormSchema, FormField
+
+    cat = _cat([_w("a", xref=999), _w("b", xref=1000)])
+    mapping = WidgetMapping(
+        file_name="x.pdf", model="m", chunk_count=1,
+        bindings=[_binding("a", xref=1), _binding("b", xref=2)],
+        unmapped_widget_field_names=[],
+    )
+    schema = FormSchema(form_title="x", sections=[], fields=[
+        FormField(
+            field_id="x", label="L", section=None,
+            field_type="text", source_text="L", required=False,
+            format_hint=None, options=None,
+            widget_bindings=[_binding("a", xref=1)],
+        ),
+        FormField(
+            field_id="y", label="L2", section=None,
+            field_type="text", source_text="L2", required=False,
+            format_hint=None, options=None,
+            widget_bindings=[_binding("b", xref=2)],
+        ),
+    ])
+
+    rebound = rebind_to_current_xrefs(mapping, schema, cat)
+    assert rebound is not None
+    new_mapping, new_schema = rebound
+    xrefs = {b.widget_field_name: b.widget_xref for b in new_mapping.bindings}
+    assert xrefs == {"a": 999, "b": 1000}
+    field_xrefs = {f.field_id: f.widget_bindings[0].widget_xref for f in new_schema.fields}
+    assert field_xrefs == {"x": 999, "y": 1000}
+
+
+def test_rebind_disambiguates_radio_siblings_by_on_value():
+    from claims_parser.mapping_cache import rebind_to_current_xrefs
+    from claims_parser.mapping_models import WidgetMapping
+    from claims_parser.schema_models import FormSchema, FormField
+
+    cat = _cat([
+        _w("radio1", t="radio", on_value="Yes", xref=501),
+        _w("radio1", t="radio", on_value="No", xref=502),
+    ])
+    mapping = WidgetMapping(
+        file_name="x.pdf", model="m", chunk_count=1,
+        bindings=[
+            _binding("radio1", xref=1, on_value="Yes"),
+            _binding("radio1", xref=2, on_value="No"),
+        ],
+        unmapped_widget_field_names=[],
+    )
+    schema = FormSchema(form_title="x", sections=[], fields=[
+        FormField(
+            field_id="q", label="L", section=None,
+            field_type="radio_group", source_text="L", required=False,
+            format_hint=None, options=["Yes", "No"],
+            widget_bindings=[
+                _binding("radio1", xref=1, on_value="Yes"),
+                _binding("radio1", xref=2, on_value="No"),
+            ],
+        ),
+    ])
+    rebound = rebind_to_current_xrefs(mapping, schema, cat)
+    assert rebound is not None
+    new_mapping, _ = rebound
+    by_on = {b.on_value: b.widget_xref for b in new_mapping.bindings}
+    assert by_on == {"Yes": 501, "No": 502}
+
+
+def test_rebind_returns_none_when_field_missing():
+    from claims_parser.mapping_cache import rebind_to_current_xrefs
+    from claims_parser.mapping_models import WidgetMapping
+    from claims_parser.schema_models import FormSchema
+
+    cat = _cat([_w("a", xref=999)])
+    mapping = WidgetMapping(
+        file_name="x.pdf", model="m", chunk_count=1,
+        bindings=[_binding("a", xref=1), _binding("missing", xref=2)],
+        unmapped_widget_field_names=[],
+    )
+    schema = FormSchema(form_title="x", sections=[], fields=[])
+    assert rebind_to_current_xrefs(mapping, schema, cat) is None
+
+
 if __name__ == "__main__":
     import sys
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]

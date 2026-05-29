@@ -149,6 +149,54 @@ def store(
     _write_index(index)
 
 
+def _build_xref_lookup(catalog: WidgetCatalog) -> dict[tuple[str, str], int]:
+    out: dict[tuple[str, str], int] = {}
+    for w in catalog.widgets:
+        out[(w.field_name, w.on_value or "")] = w.xref
+    return out
+
+
+def _rebind_one(binding, lookup_table: dict[tuple[str, str], int]) -> Optional[int]:
+    key_specific = (binding.widget_field_name, binding.on_value or "")
+    if key_specific in lookup_table:
+        return lookup_table[key_specific]
+    key_unspecific = (binding.widget_field_name, "")
+    if key_unspecific in lookup_table:
+        return lookup_table[key_unspecific]
+    return None
+
+
+def rebind_to_current_xrefs(
+    mapping: WidgetMapping,
+    schema: FormSchema,
+    catalog: WidgetCatalog,
+):
+    table = _build_xref_lookup(catalog)
+    new_bindings = []
+    for b in mapping.bindings:
+        new_xref = _rebind_one(b, table)
+        if new_xref is None:
+            return None
+        new_bindings.append(b.model_copy(update={"widget_xref": new_xref}))
+    new_mapping = mapping.model_copy(update={"bindings": new_bindings})
+
+    new_fields = []
+    for f in schema.fields:
+        if not f.widget_bindings:
+            new_fields.append(f)
+            continue
+        rebound_field_bindings = []
+        for b in f.widget_bindings:
+            new_xref = _rebind_one(b, table)
+            if new_xref is None:
+                return None
+            rebound_field_bindings.append(b.model_copy(update={"widget_xref": new_xref}))
+        new_fields.append(f.model_copy(update={"widget_bindings": rebound_field_bindings}))
+    new_schema = schema.model_copy(update={"fields": new_fields})
+
+    return new_mapping, new_schema
+
+
 def lookup(catalog: WidgetCatalog) -> Optional[CachedMapping]:
     fingerprint = compute_form_fingerprint(catalog)
     p = _cached_path(fingerprint)
