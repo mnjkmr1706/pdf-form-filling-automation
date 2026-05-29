@@ -15,7 +15,7 @@ class CachedMapping(BaseModel):
     source_pdf_basename: str
     created_at: str  # ISO-8601 UTC
     mapping: WidgetMapping
-    schema: FormSchema
+    form_schema: FormSchema  # not `schema` — shadows BaseModel.schema() in pydantic v2
 
 
 class CacheIndexEntry(BaseModel):
