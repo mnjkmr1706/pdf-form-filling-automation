@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import os
 from typing import Optional
 
@@ -52,7 +53,10 @@ def fill_form_schema(
     if client is None:
         client = OpenAI(api_key=_load_openai_key())
 
-    user_msg = schema.model_dump_json(indent=2)
+    schema_dict = schema.model_dump()
+    for f in schema_dict.get("fields", []):
+        f.pop("widget_bindings", None)
+    user_msg = json.dumps(schema_dict, indent=2)
 
     response = client.chat.completions.parse(
         model=model,
@@ -69,6 +73,11 @@ def fill_form_schema(
             f"Model {model} returned no parsed result. "
             f"Finish reason: {response.choices[0].finish_reason}"
         )
+
+    bindings_by_id = {f.field_id: f.widget_bindings for f in schema.fields}
+    for ff in filled.fields:
+        if bindings_by_id.get(ff.field_id) is not None:
+            ff.widget_bindings = bindings_by_id[ff.field_id]
     return filled
 
 

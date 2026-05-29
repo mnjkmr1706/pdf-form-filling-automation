@@ -28,6 +28,20 @@ from claims_parser.acroform_extractor import (
     load_binding,
 )
 from claims_parser.acroform_writer import write_acroform
+from claims_parser.widget_models import Widget, WidgetCatalog, WidgetRect, WidgetType
+from claims_parser.widget_extractor import (
+    extract_widget_catalog,
+    save_catalog,
+    load_catalog,
+)
+from claims_parser.mapping_models import WidgetBinding, WidgetMapping, LabelSource
+from claims_parser.widget_mapper import (
+    map_widgets,
+    build_schema_from_mapping,
+    save_mapping,
+    load_mapping,
+)
+from claims_parser.mapped_writer import write_mapped
 
 __all__ = [
     # extraction
@@ -76,4 +90,20 @@ __all__ = [
     "save_binding",
     "load_binding",
     "write_acroform",
+    # mapped acroform branch
+    "Widget",
+    "WidgetCatalog",
+    "WidgetRect",
+    "WidgetType",
+    "extract_widget_catalog",
+    "save_catalog",
+    "load_catalog",
+    "WidgetBinding",
+    "WidgetMapping",
+    "LabelSource",
+    "map_widgets",
+    "build_schema_from_mapping",
+    "save_mapping",
+    "load_mapping",
+    "write_mapped",
 ]

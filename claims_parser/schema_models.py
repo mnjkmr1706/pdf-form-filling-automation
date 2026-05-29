@@ -12,6 +12,8 @@ from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
 
+from claims_parser.mapping_models import WidgetBinding
+
 
 # Generic semantic input categories — like HTML <input type="..."> values.
 # These are NOT form-specific names. The LLM picks the most specific applicable
@@ -84,6 +86,14 @@ class FormField(BaseModel):
             "Used downstream to map this field back to its position on the page. "
             "Must appear in the input text exactly."
         )
+    )
+    widget_bindings: Optional[list[WidgetBinding]] = Field(
+        default=None,
+        description=(
+            "Populated only by the mapped AcroForm branch. For radio_group fields, "
+            "one binding per option-widget. For all other field types: one binding. "
+            "Null for non-editable forms and the legacy AcroForm branch."
+        ),
     )
 
 

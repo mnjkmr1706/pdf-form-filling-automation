@@ -10,6 +10,10 @@ ReviewReason = Literal[
     "label_inference_failed",         # AcroForm: could not infer a label for a widget
     "missing_binding",                # AcroForm: filled field has no widget binding
     "unsettable_widget",              # AcroForm: widget rejected the value (rare)
+    "widget_unmapped",                # mapped AcroForm: mapper could not bind a widget
+    "widget_low_confidence",          # mapped AcroForm: binding confidence below threshold
+    "duplicate_label_match",          # mapped AcroForm: two widgets share semantic_field_id + page
+    "radio_option_count_mismatch",    # mapped AcroForm: bound options != catalog options
 ]
 
 
