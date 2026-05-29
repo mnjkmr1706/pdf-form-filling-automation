@@ -1,0 +1,45 @@
+# Secrets / credentials
+parser.env
+.env
+.env.*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtualenvs
+.venv/
+.venv-*/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated outputs — regeneratable artifacts from each pipeline run
+output/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# WSL on Windows leaves these next to files dragged in from the host
+*:Zone.Identifier
+
+# Claude Code per-machine settings
+.claude/settings.local.json

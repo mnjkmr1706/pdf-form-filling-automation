@@ -1,0 +1,12 @@
+[project]
+name = "pdf_parser"
+version = "0.1.0"
+description = "PDF parser for claims forms"
+requires-python = ">=3.9"
+dependencies = [
+    "azure-ai-documentintelligence>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "openai>=1.50.0",
+    "pymupdf>=1.24.0",
+]
