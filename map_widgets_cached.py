@@ -38,8 +38,10 @@ def main() -> int:
     p.add_argument("context", help="DocumentContext JSON produced by extract.py.")
     p.add_argument("widgets", help="WidgetCatalog JSON produced by widget_extract.py.")
     p.add_argument("-m", "--model", default=DEFAULT_MODEL)
-    p.add_argument("--mapping-out", default=None)
-    p.add_argument("--schema-out", default=None)
+    p.add_argument("--mapping-out", default=None,
+                   help="Where to save the mapping (default: output/intermediate/mapped/<stem>.mapping.json).")
+    p.add_argument("--schema-out", default=None,
+                   help="Where to save the schema (default: output/intermediate/mapped/<stem>.schema.json).")
     p.add_argument("--no-cache", action="store_true",
                    help="Bypass cache entirely: skip read AND skip write.")
     p.add_argument("--rebuild", action="store_true",
