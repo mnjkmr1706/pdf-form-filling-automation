@@ -1,29 +1,17 @@
-"""Form-fingerprint cache for the mapped AcroForm branch.
+"""Form fingerprint for the mapped AcroForm branch.
 
-Lookup is keyed on a stable hash of the WidgetCatalog (independent of xref
-renumbering and sub-point rect jitter). On a hit, the cached binding's
-widget_xref values are rebound to the current PDF's catalog before being
-handed off to downstream consumers.
+A stable hash of the WidgetCatalog used to key the mapping cache. Independent
+of xref renumbering and sub-point rect jitter.
 """
 from __future__ import annotations
 
 import hashlib
 import json
-from datetime import datetime, timezone
-from pathlib import Path
-from typing import Optional
 
-from claims_parser.mapping_cache_models import (
-    CachedMapping,
-    CacheIndex,
-    CacheIndexEntry,
-)
-from claims_parser.mapping_models import WidgetMapping
-from claims_parser.schema_models import FormSchema
 from claims_parser.widget_models import Widget, WidgetCatalog
 
 FINGERPRINT_VERSION = 1
-RECT_BUCKET_PT = 1.0
+RECT_BUCKET_PT = 1.0  # round(v/1.0)*1.0 collapses jitter up to ±0.5pt into the same bucket
 
 
 def _bucket(v: float) -> float:
@@ -35,6 +23,8 @@ def _widget_key(w: Widget) -> tuple:
         w.rect.page,
         w.field_name,
         w.on_value or "",
+        _bucket(w.rect.x0),
+        _bucket(w.rect.y0),
     )
 
 

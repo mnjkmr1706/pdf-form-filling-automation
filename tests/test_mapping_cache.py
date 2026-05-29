@@ -85,6 +85,13 @@ def test_fingerprint_detects_on_value_change():
     assert compute_form_fingerprint(_cat([a])) != compute_form_fingerprint(_cat([b]))
 
 
+def test_fingerprint_detects_page_count_change():
+    from claims_parser.mapping_cache import compute_form_fingerprint
+    one_page = _cat([_w("a", page=1)], page_count=1, sizes=((612.0, 792.0),))
+    two_page = _cat([_w("a", page=1)], page_count=2, sizes=((612.0, 792.0), (612.0, 792.0)))
+    assert compute_form_fingerprint(one_page) != compute_form_fingerprint(two_page)
+
+
 if __name__ == "__main__":
     import sys
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
