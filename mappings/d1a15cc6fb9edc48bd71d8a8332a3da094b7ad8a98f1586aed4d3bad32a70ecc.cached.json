@@ -1,0 +1,2696 @@
+{
+  "form_fingerprint": "d1a15cc6fb9edc48bd71d8a8332a3da094b7ad8a98f1586aed4d3bad32a70ecc",
+  "source_pdf_basename": "ANTHEM_NV_CAID_ClaimsAppealsForm.pdf",
+  "created_at": "2026-05-29T12:09:17+00:00",
+  "mapping": {
+    "file_name": "ANTHEM_NV_CAID_ClaimsAppealsForm.pdf",
+    "model": "gpt-5-mini",
+    "chunk_count": 1,
+    "bindings": [
+      {
+        "widget_field_name": "Member firstlast name",
+        "widget_xref": 297,
+        "semantic_field_id": "member_first_last_name",
+        "label_text": "Member first/last name:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0665,
+          2.1491,
+          2.5347,
+          2.1512,
+          2.5345,
+          2.303,
+          1.0663,
+          2.3009
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "DI key_value_pairs contains the exact key text immediately left of the name entry and aligns with the widget rect.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Member DOB",
+        "widget_xref": 298,
+        "semantic_field_id": "member_dob",
+        "label_text": "Member DOB:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0674,
+          2.4525,
+          1.9701,
+          2.4525,
+          1.9701,
+          2.6053,
+          1.0674,
+          2.6053
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "DI key_value_pairs has the exact \"Member DOB:\" key directly adjacent to this field.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Medicaid",
+        "widget_xref": 299,
+        "semantic_field_id": "medicaid",
+        "label_text": "Medicaid",
+        "label_source": "kvp",
+        "label_polygon": [
+          6.1523,
+          2.4574,
+          6.7239,
+          2.4584,
+          6.7236,
+          2.6019,
+          6.152,
+          2.6008
+        ],
+        "label_page": 1,
+        "confidence": 0.77,
+        "reasoning": "DI key_value_pairs shows the \"Medicaid\" key and the selection mark/value polygon next to the checkbox.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Member ID",
+        "widget_xref": 300,
+        "semantic_field_id": "member_id",
+        "label_text": "Member ID:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0657,
+          2.763,
+          1.8041,
+          2.7634,
+          1.804,
+          2.9152,
+          1.0656,
+          2.9148
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "DI key_value_pairs contains \"Member ID:\" immediately to the left of this widget.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Provider firstlast name",
+        "widget_xref": 301,
+        "semantic_field_id": "provider_first_last_name",
+        "label_text": "Provider first/last name:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0654,
+          3.3995,
+          2.5402,
+          3.4015,
+          2.54,
+          3.5552,
+          1.0652,
+          3.5532
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "DI key_value_pairs has the exact provider name key aligned with this text field.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "NPI",
+        "widget_xref": 302,
+        "semantic_field_id": "npi",
+        "label_text": "NPI:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0695,
+          3.7016,
+          1.351,
+          3.703,
+          1.3503,
+          3.8455,
+          1.0688,
+          3.8441
+        ],
+        "label_page": 1,
+        "confidence": 0.77,
+        "reasoning": "DI key_value_pairs shows the \"NPI:\" label immediately left of the input line.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Provider street address",
+        "widget_xref": 303,
+        "semantic_field_id": "provider_street_address",
+        "label_text": "Provider street address:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0682,
+          3.9983,
+          2.5571,
+          4.0027,
+          2.5566,
+          4.1539,
+          1.0678,
+          4.1495
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "DI key_value_pairs contains the full \"Provider street address:\" key above the widget rect.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "City",
+        "widget_xref": 304,
+        "semantic_field_id": "city",
+        "label_text": "City:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0728,
+          4.3029,
+          1.3574,
+          4.3058,
+          1.3558,
+          4.4596,
+          1.0713,
+          4.4567
+        ],
+        "label_page": 1,
+        "confidence": 0.76,
+        "reasoning": "DI key_value_pairs includes \"City:\" immediately left of the provider city field.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "State",
+        "widget_xref": 305,
+        "semantic_field_id": "state",
+        "label_text": "State:",
+        "label_source": "kvp",
+        "label_polygon": [
+          5.597,
+          4.3017,
+          5.9718,
+          4.3039,
+          5.971,
+          4.4454,
+          5.5961,
+          4.4432
+        ],
+        "label_page": 1,
+        "confidence": 0.76,
+        "reasoning": "DI key_value_pairs contains \"State:\" on the same line to the right of the city field.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "ZIP code",
+        "widget_xref": 306,
+        "semantic_field_id": "zip_code",
+        "label_text": "ZIP code:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.064,
+          4.5892,
+          1.6719,
+          4.5921,
+          1.6712,
+          4.7432,
+          1.0633,
+          4.7403
+        ],
+        "label_page": 1,
+        "confidence": 0.76,
+        "reasoning": "DI key_value_pairs shows \"ZIP code:\" directly above/left of this input.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "I am a participating provider",
+        "widget_xref": 307,
+        "semantic_field_id": "i_am_a_participating_provider",
+        "label_text": "I am a participating provider.",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.2274,
+          4.9173,
+          2.9827,
+          4.9137,
+          2.9831,
+          5.0781,
+          1.2277,
+          5.0816
+        ],
+        "label_page": 1,
+        "confidence": 0.75,
+        "reasoning": "DI key_value_pairs contains the exact sentence with a selection mark polygon adjacent to the checkbox.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "I am a nonparticipating provider",
+        "widget_xref": 308,
+        "semantic_field_id": "i_am_a_nonparticipating_provider",
+        "label_text": "I am a nonparticipating provider.",
+        "label_source": "kvp",
+        "label_polygon": [
+          3.2327,
+          4.9122,
+          5.2132,
+          4.9157,
+          5.2129,
+          5.0813,
+          3.2324,
+          5.0777
+        ],
+        "label_page": 1,
+        "confidence": 0.75,
+        "reasoning": "DI key_value_pairs shows the full phrase and a nearby selection mark matching this checkbox.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Provider representative",
+        "widget_xref": 309,
+        "semantic_field_id": "provider_representative",
+        "label_text": "Provider representative:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0691,
+          5.2397,
+          2.5532,
+          5.2416,
+          2.553,
+          5.397,
+          1.0689,
+          5.3951
+        ],
+        "label_page": 1,
+        "confidence": 0.75,
+        "reasoning": "DI key_value_pairs/text_line contains \"Provider representative:\" directly above the associated option checkboxes.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Self",
+        "widget_xref": 310,
+        "semantic_field_id": "self",
+        "label_text": "Self",
+        "label_source": "kvp",
+        "label_polygon": [
+          2.7421,
+          5.2432,
+          2.9974,
+          5.2429,
+          2.9975,
+          5.381,
+          2.7422,
+          5.3812
+        ],
+        "label_page": 1,
+        "confidence": 0.75,
+        "reasoning": "DI key_value_pairs lists \"Self\" adjacent to the small checkbox for this option.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Billing agency",
+        "widget_xref": 311,
+        "semantic_field_id": "billing_agency",
+        "label_text": "Billing agency",
+        "label_source": "kvp",
+        "label_polygon": [
+          3.2326,
+          5.2409,
+          4.1022,
+          5.2499,
+          4.1005,
+          5.4119,
+          3.2309,
+          5.4029
+        ],
+        "label_page": 1,
+        "confidence": 0.75,
+        "reasoning": "DI key_value_pairs contains \"Billing agency\" immediately right of the checkbox.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Law firm",
+        "widget_xref": 312,
+        "semantic_field_id": "law_firm",
+        "label_text": "Law firm",
+        "label_source": "kvp",
+        "label_polygon": [
+          4.3234,
+          5.2459,
+          4.8588,
+          5.2461,
+          4.8587,
+          5.3868,
+          4.3233,
+          5.3865
+        ],
+        "label_page": 1,
+        "confidence": 0.75,
+        "reasoning": "DI key_value_pairs/text_line shows \"Law firm\" adjacent to this checkbox.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Other",
+        "widget_xref": 313,
+        "semantic_field_id": "other",
+        "label_text": "Other:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.2259,
+          5.5641,
+          1.6217,
+          5.5648,
+          1.6214,
+          5.7076,
+          1.2257,
+          5.7069
+        ],
+        "label_page": 1,
+        "confidence": 0.74,
+        "reasoning": "DI key_value_pairs contains \"Other:\" immediately left of the free-text line for this field.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Representative contact name",
+        "widget_xref": 314,
+        "semantic_field_id": "representative_contact_name",
+        "label_text": "Representative contact name:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0689,
+          5.8654,
+          2.9274,
+          5.8639,
+          2.9275,
+          6.0222,
+          1.069,
+          6.0236
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "DI key_value_pairs shows the full label directly above the associated input line.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Contact phone number",
+        "widget_xref": 315,
+        "semantic_field_id": "contact_phone_number",
+        "label_text": "Contact phone number:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.07,
+          6.1623,
+          2.5348,
+          6.1647,
+          2.5345,
+          6.3245,
+          1.0697,
+          6.3221
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "DI key_value_pairs contains this exact label immediately left of the phone input.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Email",
+        "widget_xref": 316,
+        "semantic_field_id": "email",
+        "label_text": "Email:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0702,
+          6.465,
+          1.4612,
+          6.4657,
+          1.4609,
+          6.6103,
+          1.07,
+          6.6096
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "DI key_value_pairs/text_line includes the label \"Email:\" directly above the email field.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Representative street address",
+        "widget_xref": 317,
+        "semantic_field_id": "representative_street_address",
+        "label_text": "Representative street address:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0682,
+          6.7622,
+          2.9717,
+          6.7595,
+          2.9719,
+          6.9187,
+          1.0685,
+          6.9214
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "DI key_value_pairs shows the address label immediately above this input area.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "City_2",
+        "widget_xref": 318,
+        "semantic_field_id": "city_2",
+        "label_text": "City:",
+        "label_source": "text_line",
+        "label_polygon": [
+          1.071,
+          7.0677,
+          1.3624,
+          7.0698,
+          1.3613,
+          7.2192,
+          1.07,
+          7.2171
+        ],
+        "label_page": 1,
+        "confidence": 0.74,
+        "reasoning": "A second \"City:\" text line in the DI appears directly left of this representative city field.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "State_2",
+        "widget_xref": 319,
+        "semantic_field_id": "state_2",
+        "label_text": "State:",
+        "label_source": "text_line",
+        "label_polygon": [
+          5.6373,
+          7.0646,
+          6.0112,
+          7.0684,
+          6.0098,
+          7.2078,
+          5.6359,
+          7.2041
+        ],
+        "label_page": 1,
+        "confidence": 0.74,
+        "reasoning": "A second \"State:\" text line in the DI appears to the right of the rep city field and aligns with this widget.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "ZIP code_2",
+        "widget_xref": 320,
+        "semantic_field_id": "zip_code_2",
+        "label_text": "ZIP code:",
+        "label_source": "text_line",
+        "label_polygon": [
+          1.064,
+          7.3597,
+          1.6718,
+          7.3622,
+          1.6712,
+          7.509,
+          1.0634,
+          7.5065
+        ],
+        "label_page": 1,
+        "confidence": 0.74,
+        "reasoning": "DI text_lines contains a second \"ZIP code:\" positioned above this representative ZIP input.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Claim number",
+        "widget_xref": 321,
+        "semantic_field_id": "claim_number",
+        "label_text": "Claim number:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0696,
+          7.991,
+          1.9815,
+          7.9934,
+          1.9811,
+          8.1403,
+          1.0692,
+          8.1379
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "DI key_value_pairs has \"Claim number:\" directly adjacent to this line.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Amount billed",
+        "widget_xref": 322,
+        "semantic_field_id": "amount_billed",
+        "label_text": "Amount billed:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.063,
+          8.2916,
+          1.9488,
+          8.2901,
+          1.9491,
+          8.4398,
+          1.0632,
+          8.4413
+        ],
+        "label_page": 1,
+        "confidence": 0.76,
+        "reasoning": "DI key_value_pairs shows \"Amount billed:\" with a nearby $ marker and this input line.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Amount received",
+        "widget_xref": 323,
+        "semantic_field_id": "amount_received",
+        "label_text": "Amount received:",
+        "label_source": "kvp",
+        "label_polygon": [
+          4.0652,
+          8.2911,
+          5.1521,
+          8.2908,
+          5.1521,
+          8.4368,
+          4.0653,
+          8.4371
+        ],
+        "label_page": 1,
+        "confidence": 0.76,
+        "reasoning": "DI key_value_pairs contains \"Amount received:\" aligned with the right-side input line.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Start date of service",
+        "widget_xref": 324,
+        "semantic_field_id": "start_date_of_service",
+        "label_text": "Start date of service:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0678,
+          8.5884,
+          2.3521,
+          8.5907,
+          2.3519,
+          8.7381,
+          1.0675,
+          8.7358
+        ],
+        "label_page": 1,
+        "confidence": 0.77,
+        "reasoning": "DI key_value_pairs includes this label directly to the left of the start-date input.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "End date of service",
+        "widget_xref": 325,
+        "semantic_field_id": "end_date_of_service",
+        "label_text": "End date of service:",
+        "label_source": "kvp",
+        "label_polygon": [
+          4.0406,
+          8.588,
+          5.2847,
+          8.592,
+          5.2842,
+          8.7407,
+          4.0401,
+          8.7367
+        ],
+        "label_page": 1,
+        "confidence": 0.77,
+        "reasoning": "DI key_value_pairs contains the end-date label adjacent to this field.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Authorization number",
+        "widget_xref": 326,
+        "semantic_field_id": "authorization_number",
+        "label_text": "Authorization number:",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.0623,
+          8.8829,
+          2.4387,
+          8.8831,
+          2.4387,
+          9.0339,
+          1.0623,
+          9.0336
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "DI key_value_pairs shows \"Authorization number:\" directly above this input line.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Firstlevel appeal",
+        "widget_xref": 89,
+        "semantic_field_id": "first_level_appeal",
+        "label_text": "First-level appeal",
+        "label_source": "kvp",
+        "label_polygon": [
+          1.2048,
+          2.5464,
+          2.4914,
+          2.5546,
+          2.4902,
+          2.74,
+          1.2037,
+          2.7318
+        ],
+        "label_page": 2,
+        "confidence": 0.79,
+        "reasoning": "DI key_value_pairs contains \"First-level appeal\" and a nearby selection mark polygon matching this checkbox.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Secondlevel appeal",
+        "widget_xref": 90,
+        "semantic_field_id": "second_level_appeal",
+        "label_text": "Second-level appeal",
+        "label_source": "kvp",
+        "label_polygon": [
+          2.7542,
+          2.5468,
+          4.2731,
+          2.5545,
+          4.2721,
+          2.7383,
+          2.7533,
+          2.7305
+        ],
+        "label_page": 2,
+        "confidence": 0.79,
+        "reasoning": "DI key_value_pairs shows \"Second-level appeal\" adjacent to this checkbox selection mark.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined",
+        "widget_xref": 91,
+        "semantic_field_id": "untimely_filing",
+        "label_text": ":unselected: Untimely filing",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.996,
+          3.5795,
+          3.1221,
+          3.5795,
+          3.1221,
+          3.9836,
+          0.996,
+          3.9836
+        ],
+        "label_page": 2,
+        "confidence": 0.78,
+        "reasoning": "Widget sits in the first table column/row and the table_cell contains the exact \":unselected: Untimely filing\" text.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined_2",
+        "widget_xref": 92,
+        "semantic_field_id": "claim_code_editing_denial",
+        "label_text": ":unselected: Claim code editing denial",
+        "label_source": "table_cell",
+        "label_polygon": [
+          3.1221,
+          3.5795,
+          5.302,
+          3.5862,
+          5.302,
+          3.9836,
+          3.1221,
+          3.9836
+        ],
+        "label_page": 2,
+        "confidence": 0.78,
+        "reasoning": "Widget aligns with the table's top-middle cell whose text is \":unselected: Claim code editing denial\".",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined_3",
+        "widget_xref": 93,
+        "semantic_field_id": "denied_as_duplicate",
+        "label_text": ":unselected: Denied as duplicate",
+        "label_source": "table_cell",
+        "label_polygon": [
+          5.302,
+          3.5862,
+          7.5022,
+          3.5862,
+          7.5022,
+          3.9836,
+          5.302,
+          3.9836
+        ],
+        "label_page": 2,
+        "confidence": 0.78,
+        "reasoning": "Widget's x-position matches the table's right column top cell containing \":unselected: Denied as duplicate\".",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined_4",
+        "widget_xref": 94,
+        "semantic_field_id": "no_authorization",
+        "label_text": ":unselected: No authorization",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.996,
+          3.9836,
+          3.1221,
+          3.9836,
+          3.1221,
+          4.3878,
+          0.996,
+          4.3878
+        ],
+        "label_page": 2,
+        "confidence": 0.78,
+        "reasoning": "Widget is colocated with the second-row left table cell whose text is \":unselected: No authorization\".",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined_5",
+        "widget_xref": 95,
+        "semantic_field_id": "retrospective_authorization_issue",
+        "label_text": ":unselected: Retrospective authorization issue",
+        "label_source": "table_cell",
+        "label_polygon": [
+          3.1221,
+          3.9836,
+          5.302,
+          3.9836,
+          5.302,
+          4.3878,
+          3.1221,
+          4.3878
+        ],
+        "label_page": 2,
+        "confidence": 0.78,
+        "reasoning": "Widget aligns with the middle cell in the second table row whose text matches this label.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Denial related to provider",
+        "widget_xref": 96,
+        "semantic_field_id": "denial_related_to_provider_data_issue",
+        "label_text": ":unselected: Denial related to provider data issue",
+        "label_source": "table_cell",
+        "label_polygon": [
+          5.302,
+          3.9836,
+          7.5022,
+          3.9836,
+          7.5022,
+          4.3878,
+          5.302,
+          4.3878
+        ],
+        "label_page": 2,
+        "confidence": 0.78,
+        "reasoning": "Widget's position matches the right-column cell in row two with the exact table text.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined_6",
+        "widget_xref": 97,
+        "semantic_field_id": "denied_for_other_health_insurance_ohi_but_member_doesnt_have_ohi",
+        "label_text": ":unselected: Denied for other health insurance (OHI), but member doesn't have OHI",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.996,
+          4.3878,
+          3.1221,
+          4.3878,
+          3.1221,
+          5.1961,
+          0.996,
+          5.1961
+        ],
+        "label_page": 2,
+        "confidence": 0.77,
+        "reasoning": "Widget lies in the left column covering the multi-line table cell that contains this exact long label.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined_7",
+        "widget_xref": 98,
+        "semantic_field_id": "disagree_that_you_were_paid_according_to_your_contract",
+        "label_text": ":unselected: Disagree that you were paid according to your contract",
+        "label_source": "table_cell",
+        "label_polygon": [
+          3.1221,
+          4.3878,
+          5.302,
+          4.3878,
+          5.302,
+          5.1961,
+          3.1221,
+          5.1961
+        ],
+        "label_page": 2,
+        "confidence": 0.77,
+        "reasoning": "Widget maps to the middle table cell spanning two rows that contains this text verbatim.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Member retroeligibility",
+        "widget_xref": 99,
+        "semantic_field_id": "member_retro_eligibility_issue",
+        "label_text": ":unselected: Member retro-eligibility issue",
+        "label_source": "table_cell",
+        "label_polygon": [
+          5.302,
+          4.3878,
+          7.5022,
+          4.3878,
+          7.5022,
+          4.7785,
+          5.302,
+          4.7717
+        ],
+        "label_page": 2,
+        "confidence": 0.77,
+        "reasoning": "Widget's position corresponds to the right-column cell in the third row containing this exact text.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "ER level of payment",
+        "widget_xref": 100,
+        "semantic_field_id": "er_level_of_payment_review",
+        "label_text": ":unselected: ER level of payment review",
+        "label_source": "table_cell",
+        "label_polygon": [
+          5.302,
+          4.7717,
+          7.5022,
+          4.7785,
+          7.5022,
+          5.2028,
+          5.302,
+          5.1961
+        ],
+        "label_page": 2,
+        "confidence": 0.77,
+        "reasoning": "Widget aligns with the right-column cell for the ER-level review text in the table.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined_8",
+        "widget_xref": 101,
+        "semantic_field_id": "experimental_investigational_procedure_denial",
+        "label_text": ":unselected: Experimental/investigational procedure denial",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.996,
+          5.1961,
+          3.1221,
+          5.1961,
+          3.1221,
+          5.9438,
+          0.996,
+          5.9438
+        ],
+        "label_page": 2,
+        "confidence": 0.77,
+        "reasoning": "Widget is colocated with the bottom-left table cell whose text matches exactly.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "Data elements on the",
+        "widget_xref": 102,
+        "semantic_field_id": "data_elements_on_the_claim_on_file_do_not_match_the_claim_originally_submitted",
+        "label_text": ":unselected: Data elements on the claim on file do not match the claim originally submitted",
+        "label_source": "table_cell",
+        "label_polygon": [
+          3.1221,
+          5.1961,
+          5.302,
+          5.1961,
+          5.302,
+          5.9438,
+          3.1221,
+          5.9438
+        ],
+        "label_page": 2,
+        "confidence": 0.77,
+        "reasoning": "Widget sits in the table's bottom-middle cell containing the exact long text.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "undefined_9",
+        "widget_xref": 103,
+        "semantic_field_id": "other_2",
+        "label_text": ":unselected: Other:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          5.302,
+          5.1961,
+          7.5022,
+          5.2028,
+          7.5022,
+          5.7013,
+          5.302,
+          5.7013
+        ],
+        "label_page": 2,
+        "confidence": 0.75,
+        "reasoning": "Widget is inside the table cell labeled \":unselected: Other:\" in the bottom-right corner of the table.",
+        "option_label": null,
+        "on_value": "On"
+      },
+      {
+        "widget_field_name": "1",
+        "widget_xref": 104,
+        "semantic_field_id": "other_2",
+        "label_text": ":unselected: Other:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          5.302,
+          5.1961,
+          7.5022,
+          5.2028,
+          7.5022,
+          5.7013,
+          5.302,
+          5.7013
+        ],
+        "label_page": 2,
+        "confidence": 0.7,
+        "reasoning": "This small text box is inside the same \"Other:\" table cell, so it is named by that printed label.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "2",
+        "widget_xref": 105,
+        "semantic_field_id": "other_2",
+        "label_text": ":unselected: Other:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          5.302,
+          5.1961,
+          7.5022,
+          5.2028,
+          7.5022,
+          5.7013,
+          5.302,
+          5.7013
+        ],
+        "label_page": 2,
+        "confidence": 0.7,
+        "reasoning": "This small text box is also inside the bottom-right \"Other:\" table cell and shares that printed label.",
+        "option_label": null,
+        "on_value": null
+      }
+    ],
+    "unmapped_widget_field_names": []
+  },
+  "form_schema": {
+    "form_title": null,
+    "issuer": null,
+    "sections": [],
+    "fields": [
+      {
+        "field_id": "member_first_last_name",
+        "label": "Member first/last name:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Member first/last name:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Member firstlast name",
+            "widget_xref": 297,
+            "semantic_field_id": "member_first_last_name",
+            "label_text": "Member first/last name:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0665,
+              2.1491,
+              2.5347,
+              2.1512,
+              2.5345,
+              2.303,
+              1.0663,
+              2.3009
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "DI key_value_pairs contains the exact key text immediately left of the name entry and aligns with the widget rect.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "member_dob",
+        "label": "Member DOB:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Member DOB:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Member DOB",
+            "widget_xref": 298,
+            "semantic_field_id": "member_dob",
+            "label_text": "Member DOB:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0674,
+              2.4525,
+              1.9701,
+              2.4525,
+              1.9701,
+              2.6053,
+              1.0674,
+              2.6053
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "DI key_value_pairs has the exact \"Member DOB:\" key directly adjacent to this field.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "medicaid",
+        "label": "Medicaid",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "Medicaid"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "Medicaid",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Medicaid",
+            "widget_xref": 299,
+            "semantic_field_id": "medicaid",
+            "label_text": "Medicaid",
+            "label_source": "kvp",
+            "label_polygon": [
+              6.1523,
+              2.4574,
+              6.7239,
+              2.4584,
+              6.7236,
+              2.6019,
+              6.152,
+              2.6008
+            ],
+            "label_page": 1,
+            "confidence": 0.77,
+            "reasoning": "DI key_value_pairs shows the \"Medicaid\" key and the selection mark/value polygon next to the checkbox.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "member_id",
+        "label": "Member ID:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Member ID:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Member ID",
+            "widget_xref": 300,
+            "semantic_field_id": "member_id",
+            "label_text": "Member ID:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0657,
+              2.763,
+              1.8041,
+              2.7634,
+              1.804,
+              2.9152,
+              1.0656,
+              2.9148
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "DI key_value_pairs contains \"Member ID:\" immediately to the left of this widget.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "provider_first_last_name",
+        "label": "Provider first/last name:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Provider first/last name:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Provider firstlast name",
+            "widget_xref": 301,
+            "semantic_field_id": "provider_first_last_name",
+            "label_text": "Provider first/last name:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0654,
+              3.3995,
+              2.5402,
+              3.4015,
+              2.54,
+              3.5552,
+              1.0652,
+              3.5532
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "DI key_value_pairs has the exact provider name key aligned with this text field.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "npi",
+        "label": "NPI:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "NPI:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "NPI",
+            "widget_xref": 302,
+            "semantic_field_id": "npi",
+            "label_text": "NPI:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0695,
+              3.7016,
+              1.351,
+              3.703,
+              1.3503,
+              3.8455,
+              1.0688,
+              3.8441
+            ],
+            "label_page": 1,
+            "confidence": 0.77,
+            "reasoning": "DI key_value_pairs shows the \"NPI:\" label immediately left of the input line.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "provider_street_address",
+        "label": "Provider street address:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Provider street address:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Provider street address",
+            "widget_xref": 303,
+            "semantic_field_id": "provider_street_address",
+            "label_text": "Provider street address:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0682,
+              3.9983,
+              2.5571,
+              4.0027,
+              2.5566,
+              4.1539,
+              1.0678,
+              4.1495
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "DI key_value_pairs contains the full \"Provider street address:\" key above the widget rect.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "city",
+        "label": "City:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "City:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "City",
+            "widget_xref": 304,
+            "semantic_field_id": "city",
+            "label_text": "City:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0728,
+              4.3029,
+              1.3574,
+              4.3058,
+              1.3558,
+              4.4596,
+              1.0713,
+              4.4567
+            ],
+            "label_page": 1,
+            "confidence": 0.76,
+            "reasoning": "DI key_value_pairs includes \"City:\" immediately left of the provider city field.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "state",
+        "label": "State:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "State:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "State",
+            "widget_xref": 305,
+            "semantic_field_id": "state",
+            "label_text": "State:",
+            "label_source": "kvp",
+            "label_polygon": [
+              5.597,
+              4.3017,
+              5.9718,
+              4.3039,
+              5.971,
+              4.4454,
+              5.5961,
+              4.4432
+            ],
+            "label_page": 1,
+            "confidence": 0.76,
+            "reasoning": "DI key_value_pairs contains \"State:\" on the same line to the right of the city field.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "zip_code",
+        "label": "ZIP code:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "ZIP code:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "ZIP code",
+            "widget_xref": 306,
+            "semantic_field_id": "zip_code",
+            "label_text": "ZIP code:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.064,
+              4.5892,
+              1.6719,
+              4.5921,
+              1.6712,
+              4.7432,
+              1.0633,
+              4.7403
+            ],
+            "label_page": 1,
+            "confidence": 0.76,
+            "reasoning": "DI key_value_pairs shows \"ZIP code:\" directly above/left of this input.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "i_am_a_participating_provider",
+        "label": "I am a participating provider.",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "I am a participating provider."
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "I am a participating provider.",
+        "widget_bindings": [
+          {
+            "widget_field_name": "I am a participating provider",
+            "widget_xref": 307,
+            "semantic_field_id": "i_am_a_participating_provider",
+            "label_text": "I am a participating provider.",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.2274,
+              4.9173,
+              2.9827,
+              4.9137,
+              2.9831,
+              5.0781,
+              1.2277,
+              5.0816
+            ],
+            "label_page": 1,
+            "confidence": 0.75,
+            "reasoning": "DI key_value_pairs contains the exact sentence with a selection mark polygon adjacent to the checkbox.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "i_am_a_nonparticipating_provider",
+        "label": "I am a nonparticipating provider.",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "I am a nonparticipating provider."
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "I am a nonparticipating provider.",
+        "widget_bindings": [
+          {
+            "widget_field_name": "I am a nonparticipating provider",
+            "widget_xref": 308,
+            "semantic_field_id": "i_am_a_nonparticipating_provider",
+            "label_text": "I am a nonparticipating provider.",
+            "label_source": "kvp",
+            "label_polygon": [
+              3.2327,
+              4.9122,
+              5.2132,
+              4.9157,
+              5.2129,
+              5.0813,
+              3.2324,
+              5.0777
+            ],
+            "label_page": 1,
+            "confidence": 0.75,
+            "reasoning": "DI key_value_pairs shows the full phrase and a nearby selection mark matching this checkbox.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "provider_representative",
+        "label": "Provider representative:",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "Provider representative:"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "Provider representative:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Provider representative",
+            "widget_xref": 309,
+            "semantic_field_id": "provider_representative",
+            "label_text": "Provider representative:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0691,
+              5.2397,
+              2.5532,
+              5.2416,
+              2.553,
+              5.397,
+              1.0689,
+              5.3951
+            ],
+            "label_page": 1,
+            "confidence": 0.75,
+            "reasoning": "DI key_value_pairs/text_line contains \"Provider representative:\" directly above the associated option checkboxes.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "self",
+        "label": "Self",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "Self"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "Self",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Self",
+            "widget_xref": 310,
+            "semantic_field_id": "self",
+            "label_text": "Self",
+            "label_source": "kvp",
+            "label_polygon": [
+              2.7421,
+              5.2432,
+              2.9974,
+              5.2429,
+              2.9975,
+              5.381,
+              2.7422,
+              5.3812
+            ],
+            "label_page": 1,
+            "confidence": 0.75,
+            "reasoning": "DI key_value_pairs lists \"Self\" adjacent to the small checkbox for this option.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "billing_agency",
+        "label": "Billing agency",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "Billing agency"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "Billing agency",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Billing agency",
+            "widget_xref": 311,
+            "semantic_field_id": "billing_agency",
+            "label_text": "Billing agency",
+            "label_source": "kvp",
+            "label_polygon": [
+              3.2326,
+              5.2409,
+              4.1022,
+              5.2499,
+              4.1005,
+              5.4119,
+              3.2309,
+              5.4029
+            ],
+            "label_page": 1,
+            "confidence": 0.75,
+            "reasoning": "DI key_value_pairs contains \"Billing agency\" immediately right of the checkbox.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "law_firm",
+        "label": "Law firm",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "Law firm"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "Law firm",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Law firm",
+            "widget_xref": 312,
+            "semantic_field_id": "law_firm",
+            "label_text": "Law firm",
+            "label_source": "kvp",
+            "label_polygon": [
+              4.3234,
+              5.2459,
+              4.8588,
+              5.2461,
+              4.8587,
+              5.3868,
+              4.3233,
+              5.3865
+            ],
+            "label_page": 1,
+            "confidence": 0.75,
+            "reasoning": "DI key_value_pairs/text_line shows \"Law firm\" adjacent to this checkbox.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "other",
+        "label": "Other:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Other:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Other",
+            "widget_xref": 313,
+            "semantic_field_id": "other",
+            "label_text": "Other:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.2259,
+              5.5641,
+              1.6217,
+              5.5648,
+              1.6214,
+              5.7076,
+              1.2257,
+              5.7069
+            ],
+            "label_page": 1,
+            "confidence": 0.74,
+            "reasoning": "DI key_value_pairs contains \"Other:\" immediately left of the free-text line for this field.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "representative_contact_name",
+        "label": "Representative contact name:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Representative contact name:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Representative contact name",
+            "widget_xref": 314,
+            "semantic_field_id": "representative_contact_name",
+            "label_text": "Representative contact name:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0689,
+              5.8654,
+              2.9274,
+              5.8639,
+              2.9275,
+              6.0222,
+              1.069,
+              6.0236
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "DI key_value_pairs shows the full label directly above the associated input line.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "contact_phone_number",
+        "label": "Contact phone number:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Contact phone number:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Contact phone number",
+            "widget_xref": 315,
+            "semantic_field_id": "contact_phone_number",
+            "label_text": "Contact phone number:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.07,
+              6.1623,
+              2.5348,
+              6.1647,
+              2.5345,
+              6.3245,
+              1.0697,
+              6.3221
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "DI key_value_pairs contains this exact label immediately left of the phone input.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "email",
+        "label": "Email:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Email:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Email",
+            "widget_xref": 316,
+            "semantic_field_id": "email",
+            "label_text": "Email:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0702,
+              6.465,
+              1.4612,
+              6.4657,
+              1.4609,
+              6.6103,
+              1.07,
+              6.6096
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "DI key_value_pairs/text_line includes the label \"Email:\" directly above the email field.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "representative_street_address",
+        "label": "Representative street address:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Representative street address:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Representative street address",
+            "widget_xref": 317,
+            "semantic_field_id": "representative_street_address",
+            "label_text": "Representative street address:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0682,
+              6.7622,
+              2.9717,
+              6.7595,
+              2.9719,
+              6.9187,
+              1.0685,
+              6.9214
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "DI key_value_pairs shows the address label immediately above this input area.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "city_2",
+        "label": "City:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "City:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "City_2",
+            "widget_xref": 318,
+            "semantic_field_id": "city_2",
+            "label_text": "City:",
+            "label_source": "text_line",
+            "label_polygon": [
+              1.071,
+              7.0677,
+              1.3624,
+              7.0698,
+              1.3613,
+              7.2192,
+              1.07,
+              7.2171
+            ],
+            "label_page": 1,
+            "confidence": 0.74,
+            "reasoning": "A second \"City:\" text line in the DI appears directly left of this representative city field.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "state_2",
+        "label": "State:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "State:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "State_2",
+            "widget_xref": 319,
+            "semantic_field_id": "state_2",
+            "label_text": "State:",
+            "label_source": "text_line",
+            "label_polygon": [
+              5.6373,
+              7.0646,
+              6.0112,
+              7.0684,
+              6.0098,
+              7.2078,
+              5.6359,
+              7.2041
+            ],
+            "label_page": 1,
+            "confidence": 0.74,
+            "reasoning": "A second \"State:\" text line in the DI appears to the right of the rep city field and aligns with this widget.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "zip_code_2",
+        "label": "ZIP code:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "ZIP code:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "ZIP code_2",
+            "widget_xref": 320,
+            "semantic_field_id": "zip_code_2",
+            "label_text": "ZIP code:",
+            "label_source": "text_line",
+            "label_polygon": [
+              1.064,
+              7.3597,
+              1.6718,
+              7.3622,
+              1.6712,
+              7.509,
+              1.0634,
+              7.5065
+            ],
+            "label_page": 1,
+            "confidence": 0.74,
+            "reasoning": "DI text_lines contains a second \"ZIP code:\" positioned above this representative ZIP input.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "claim_number",
+        "label": "Claim number:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Claim number:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Claim number",
+            "widget_xref": 321,
+            "semantic_field_id": "claim_number",
+            "label_text": "Claim number:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0696,
+              7.991,
+              1.9815,
+              7.9934,
+              1.9811,
+              8.1403,
+              1.0692,
+              8.1379
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "DI key_value_pairs has \"Claim number:\" directly adjacent to this line.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "amount_billed",
+        "label": "Amount billed:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Amount billed:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Amount billed",
+            "widget_xref": 322,
+            "semantic_field_id": "amount_billed",
+            "label_text": "Amount billed:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.063,
+              8.2916,
+              1.9488,
+              8.2901,
+              1.9491,
+              8.4398,
+              1.0632,
+              8.4413
+            ],
+            "label_page": 1,
+            "confidence": 0.76,
+            "reasoning": "DI key_value_pairs shows \"Amount billed:\" with a nearby $ marker and this input line.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "amount_received",
+        "label": "Amount received:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Amount received:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Amount received",
+            "widget_xref": 323,
+            "semantic_field_id": "amount_received",
+            "label_text": "Amount received:",
+            "label_source": "kvp",
+            "label_polygon": [
+              4.0652,
+              8.2911,
+              5.1521,
+              8.2908,
+              5.1521,
+              8.4368,
+              4.0653,
+              8.4371
+            ],
+            "label_page": 1,
+            "confidence": 0.76,
+            "reasoning": "DI key_value_pairs contains \"Amount received:\" aligned with the right-side input line.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "start_date_of_service",
+        "label": "Start date of service:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Start date of service:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Start date of service",
+            "widget_xref": 324,
+            "semantic_field_id": "start_date_of_service",
+            "label_text": "Start date of service:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0678,
+              8.5884,
+              2.3521,
+              8.5907,
+              2.3519,
+              8.7381,
+              1.0675,
+              8.7358
+            ],
+            "label_page": 1,
+            "confidence": 0.77,
+            "reasoning": "DI key_value_pairs includes this label directly to the left of the start-date input.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "end_date_of_service",
+        "label": "End date of service:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "End date of service:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "End date of service",
+            "widget_xref": 325,
+            "semantic_field_id": "end_date_of_service",
+            "label_text": "End date of service:",
+            "label_source": "kvp",
+            "label_polygon": [
+              4.0406,
+              8.588,
+              5.2847,
+              8.592,
+              5.2842,
+              8.7407,
+              4.0401,
+              8.7367
+            ],
+            "label_page": 1,
+            "confidence": 0.77,
+            "reasoning": "DI key_value_pairs contains the end-date label adjacent to this field.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "authorization_number",
+        "label": "Authorization number:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Authorization number:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Authorization number",
+            "widget_xref": 326,
+            "semantic_field_id": "authorization_number",
+            "label_text": "Authorization number:",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.0623,
+              8.8829,
+              2.4387,
+              8.8831,
+              2.4387,
+              9.0339,
+              1.0623,
+              9.0336
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "DI key_value_pairs shows \"Authorization number:\" directly above this input line.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "first_level_appeal",
+        "label": "First-level appeal",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "First-level appeal"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "First-level appeal",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Firstlevel appeal",
+            "widget_xref": 89,
+            "semantic_field_id": "first_level_appeal",
+            "label_text": "First-level appeal",
+            "label_source": "kvp",
+            "label_polygon": [
+              1.2048,
+              2.5464,
+              2.4914,
+              2.5546,
+              2.4902,
+              2.74,
+              1.2037,
+              2.7318
+            ],
+            "label_page": 2,
+            "confidence": 0.79,
+            "reasoning": "DI key_value_pairs contains \"First-level appeal\" and a nearby selection mark polygon matching this checkbox.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "second_level_appeal",
+        "label": "Second-level appeal",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          "Second-level appeal"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "Second-level appeal",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Secondlevel appeal",
+            "widget_xref": 90,
+            "semantic_field_id": "second_level_appeal",
+            "label_text": "Second-level appeal",
+            "label_source": "kvp",
+            "label_polygon": [
+              2.7542,
+              2.5468,
+              4.2731,
+              2.5545,
+              4.2721,
+              2.7383,
+              2.7533,
+              2.7305
+            ],
+            "label_page": 2,
+            "confidence": 0.79,
+            "reasoning": "DI key_value_pairs shows \"Second-level appeal\" adjacent to this checkbox selection mark.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "untimely_filing",
+        "label": ":unselected: Untimely filing",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Untimely filing"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Untimely filing",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined",
+            "widget_xref": 91,
+            "semantic_field_id": "untimely_filing",
+            "label_text": ":unselected: Untimely filing",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.996,
+              3.5795,
+              3.1221,
+              3.5795,
+              3.1221,
+              3.9836,
+              0.996,
+              3.9836
+            ],
+            "label_page": 2,
+            "confidence": 0.78,
+            "reasoning": "Widget sits in the first table column/row and the table_cell contains the exact \":unselected: Untimely filing\" text.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "claim_code_editing_denial",
+        "label": ":unselected: Claim code editing denial",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Claim code editing denial"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Claim code editing denial",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined_2",
+            "widget_xref": 92,
+            "semantic_field_id": "claim_code_editing_denial",
+            "label_text": ":unselected: Claim code editing denial",
+            "label_source": "table_cell",
+            "label_polygon": [
+              3.1221,
+              3.5795,
+              5.302,
+              3.5862,
+              5.302,
+              3.9836,
+              3.1221,
+              3.9836
+            ],
+            "label_page": 2,
+            "confidence": 0.78,
+            "reasoning": "Widget aligns with the table's top-middle cell whose text is \":unselected: Claim code editing denial\".",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "denied_as_duplicate",
+        "label": ":unselected: Denied as duplicate",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Denied as duplicate"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Denied as duplicate",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined_3",
+            "widget_xref": 93,
+            "semantic_field_id": "denied_as_duplicate",
+            "label_text": ":unselected: Denied as duplicate",
+            "label_source": "table_cell",
+            "label_polygon": [
+              5.302,
+              3.5862,
+              7.5022,
+              3.5862,
+              7.5022,
+              3.9836,
+              5.302,
+              3.9836
+            ],
+            "label_page": 2,
+            "confidence": 0.78,
+            "reasoning": "Widget's x-position matches the table's right column top cell containing \":unselected: Denied as duplicate\".",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "no_authorization",
+        "label": ":unselected: No authorization",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: No authorization"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: No authorization",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined_4",
+            "widget_xref": 94,
+            "semantic_field_id": "no_authorization",
+            "label_text": ":unselected: No authorization",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.996,
+              3.9836,
+              3.1221,
+              3.9836,
+              3.1221,
+              4.3878,
+              0.996,
+              4.3878
+            ],
+            "label_page": 2,
+            "confidence": 0.78,
+            "reasoning": "Widget is colocated with the second-row left table cell whose text is \":unselected: No authorization\".",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "retrospective_authorization_issue",
+        "label": ":unselected: Retrospective authorization issue",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Retrospective authorization issue"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Retrospective authorization issue",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined_5",
+            "widget_xref": 95,
+            "semantic_field_id": "retrospective_authorization_issue",
+            "label_text": ":unselected: Retrospective authorization issue",
+            "label_source": "table_cell",
+            "label_polygon": [
+              3.1221,
+              3.9836,
+              5.302,
+              3.9836,
+              5.302,
+              4.3878,
+              3.1221,
+              4.3878
+            ],
+            "label_page": 2,
+            "confidence": 0.78,
+            "reasoning": "Widget aligns with the middle cell in the second table row whose text matches this label.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "denial_related_to_provider_data_issue",
+        "label": ":unselected: Denial related to provider data issue",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Denial related to provider data issue"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Denial related to provider data issue",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Denial related to provider",
+            "widget_xref": 96,
+            "semantic_field_id": "denial_related_to_provider_data_issue",
+            "label_text": ":unselected: Denial related to provider data issue",
+            "label_source": "table_cell",
+            "label_polygon": [
+              5.302,
+              3.9836,
+              7.5022,
+              3.9836,
+              7.5022,
+              4.3878,
+              5.302,
+              4.3878
+            ],
+            "label_page": 2,
+            "confidence": 0.78,
+            "reasoning": "Widget's position matches the right-column cell in row two with the exact table text.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "denied_for_other_health_insurance_ohi_but_member_doesnt_have_ohi",
+        "label": ":unselected: Denied for other health insurance (OHI), but member doesn't have OHI",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Denied for other health insurance (OHI), but member doesn't have OHI"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Denied for other health insurance (OHI), but member doesn't have OHI",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined_6",
+            "widget_xref": 97,
+            "semantic_field_id": "denied_for_other_health_insurance_ohi_but_member_doesnt_have_ohi",
+            "label_text": ":unselected: Denied for other health insurance (OHI), but member doesn't have OHI",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.996,
+              4.3878,
+              3.1221,
+              4.3878,
+              3.1221,
+              5.1961,
+              0.996,
+              5.1961
+            ],
+            "label_page": 2,
+            "confidence": 0.77,
+            "reasoning": "Widget lies in the left column covering the multi-line table cell that contains this exact long label.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "disagree_that_you_were_paid_according_to_your_contract",
+        "label": ":unselected: Disagree that you were paid according to your contract",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Disagree that you were paid according to your contract"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Disagree that you were paid according to your contract",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined_7",
+            "widget_xref": 98,
+            "semantic_field_id": "disagree_that_you_were_paid_according_to_your_contract",
+            "label_text": ":unselected: Disagree that you were paid according to your contract",
+            "label_source": "table_cell",
+            "label_polygon": [
+              3.1221,
+              4.3878,
+              5.302,
+              4.3878,
+              5.302,
+              5.1961,
+              3.1221,
+              5.1961
+            ],
+            "label_page": 2,
+            "confidence": 0.77,
+            "reasoning": "Widget maps to the middle table cell spanning two rows that contains this text verbatim.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "member_retro_eligibility_issue",
+        "label": ":unselected: Member retro-eligibility issue",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Member retro-eligibility issue"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Member retro-eligibility issue",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Member retroeligibility",
+            "widget_xref": 99,
+            "semantic_field_id": "member_retro_eligibility_issue",
+            "label_text": ":unselected: Member retro-eligibility issue",
+            "label_source": "table_cell",
+            "label_polygon": [
+              5.302,
+              4.3878,
+              7.5022,
+              4.3878,
+              7.5022,
+              4.7785,
+              5.302,
+              4.7717
+            ],
+            "label_page": 2,
+            "confidence": 0.77,
+            "reasoning": "Widget's position corresponds to the right-column cell in the third row containing this exact text.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "er_level_of_payment_review",
+        "label": ":unselected: ER level of payment review",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: ER level of payment review"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: ER level of payment review",
+        "widget_bindings": [
+          {
+            "widget_field_name": "ER level of payment",
+            "widget_xref": 100,
+            "semantic_field_id": "er_level_of_payment_review",
+            "label_text": ":unselected: ER level of payment review",
+            "label_source": "table_cell",
+            "label_polygon": [
+              5.302,
+              4.7717,
+              7.5022,
+              4.7785,
+              7.5022,
+              5.2028,
+              5.302,
+              5.1961
+            ],
+            "label_page": 2,
+            "confidence": 0.77,
+            "reasoning": "Widget aligns with the right-column cell for the ER-level review text in the table.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "experimental_investigational_procedure_denial",
+        "label": ":unselected: Experimental/investigational procedure denial",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Experimental/investigational procedure denial"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Experimental/investigational procedure denial",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined_8",
+            "widget_xref": 101,
+            "semantic_field_id": "experimental_investigational_procedure_denial",
+            "label_text": ":unselected: Experimental/investigational procedure denial",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.996,
+              5.1961,
+              3.1221,
+              5.1961,
+              3.1221,
+              5.9438,
+              0.996,
+              5.9438
+            ],
+            "label_page": 2,
+            "confidence": 0.77,
+            "reasoning": "Widget is colocated with the bottom-left table cell whose text matches exactly.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "data_elements_on_the_claim_on_file_do_not_match_the_claim_originally_submitted",
+        "label": ":unselected: Data elements on the claim on file do not match the claim originally submitted",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Data elements on the claim on file do not match the claim originally submitted"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Data elements on the claim on file do not match the claim originally submitted",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Data elements on the",
+            "widget_xref": 102,
+            "semantic_field_id": "data_elements_on_the_claim_on_file_do_not_match_the_claim_originally_submitted",
+            "label_text": ":unselected: Data elements on the claim on file do not match the claim originally submitted",
+            "label_source": "table_cell",
+            "label_polygon": [
+              3.1221,
+              5.1961,
+              5.302,
+              5.1961,
+              5.302,
+              5.9438,
+              3.1221,
+              5.9438
+            ],
+            "label_page": 2,
+            "confidence": 0.77,
+            "reasoning": "Widget sits in the table's bottom-middle cell containing the exact long text.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "other_2",
+        "label": ":unselected: Other:",
+        "section": null,
+        "field_type": "checkbox",
+        "options": [
+          ":unselected: Other:"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Other:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "undefined_9",
+            "widget_xref": 103,
+            "semantic_field_id": "other_2",
+            "label_text": ":unselected: Other:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              5.302,
+              5.1961,
+              7.5022,
+              5.2028,
+              7.5022,
+              5.7013,
+              5.302,
+              5.7013
+            ],
+            "label_page": 2,
+            "confidence": 0.75,
+            "reasoning": "Widget is inside the table cell labeled \":unselected: Other:\" in the bottom-right corner of the table.",
+            "option_label": null,
+            "on_value": "On"
+          }
+        ]
+      },
+      {
+        "field_id": "other_2_2",
+        "label": ":unselected: Other:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Other:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "1",
+            "widget_xref": 104,
+            "semantic_field_id": "other_2",
+            "label_text": ":unselected: Other:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              5.302,
+              5.1961,
+              7.5022,
+              5.2028,
+              7.5022,
+              5.7013,
+              5.302,
+              5.7013
+            ],
+            "label_page": 2,
+            "confidence": 0.7,
+            "reasoning": "This small text box is inside the same \"Other:\" table cell, so it is named by that printed label.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "other_2_3",
+        "label": ":unselected: Other:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": ":unselected: Other:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "2",
+            "widget_xref": 105,
+            "semantic_field_id": "other_2",
+            "label_text": ":unselected: Other:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              5.302,
+              5.1961,
+              7.5022,
+              5.2028,
+              7.5022,
+              5.7013,
+              5.302,
+              5.7013
+            ],
+            "label_page": 2,
+            "confidence": 0.7,
+            "reasoning": "This small text box is also inside the bottom-right \"Other:\" table cell and shares that printed label.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      }
+    ]
+  }
+}

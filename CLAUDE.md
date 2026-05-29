@@ -163,11 +163,19 @@ The active virtualenv is `.venv-1`. Use `uv` for dependency management.
 .venv-1/bin/python acroform_write.py   input/ANTHEM_NV_CAID_ClaimsAppealsForm.pdf \
                                        output/intermediate/ANTHEM_NV_CAID_ClaimsAppealsForm.filled.json
 
+# Mapped AcroForm branch with fingerprint cache (skip the vision LLM on repeat forms)
+.venv-1/bin/python map_widgets_cached.py input/<name>.pdf \
+                                         output/intermediate/<name>.context.json \
+                                         output/intermediate/mapped/<name>.widgets.json
+
 # Useful flags
-#   write_pdf.py        --iterations 0   skip vision pass (anchor only)
-#   acroform_extract.py --no-refine      skip LLM type-refinement
-#   acroform_extract.py --no-vision      skip Tier-3 vision label residuals
-#   acroform_write.py   --flatten        bake widgets into static content
+#   write_pdf.py             --iterations 0   skip vision pass (anchor only)
+#   acroform_extract.py      --no-refine      skip LLM type-refinement
+#   acroform_extract.py      --no-vision      skip Tier-3 vision label residuals
+#   acroform_write.py        --flatten        bake widgets into static content
+#   map_widgets_cached.py    --no-cache       bypass cache (skip read AND write)
+#   map_widgets_cached.py    --rebuild        force re-derive and overwrite cache entry
+#   map_widgets_cached.py    --strict-cache   exit non-zero on cache miss
 
 # Dependencies
 uv add <package>
