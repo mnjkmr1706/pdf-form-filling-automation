@@ -27,6 +27,9 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# Source PDFs — kept locally only; may contain PHI when filled by downstream users
+input/
+
 # Generated outputs — regeneratable artifacts from each pipeline run
 output/
 
