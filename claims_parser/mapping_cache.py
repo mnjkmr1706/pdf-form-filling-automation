@@ -7,7 +7,18 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Optional
 
+from claims_parser.mapping_cache_models import (
+    CachedMapping,
+    CacheIndex,
+    CacheIndexEntry,
+)
+from claims_parser.mapping_models import WidgetMapping
+from claims_parser.schema_models import FormSchema
 from claims_parser.widget_models import Widget, WidgetCatalog
 
 FINGERPRINT_VERSION = 1
@@ -57,3 +68,84 @@ def compute_form_fingerprint(catalog: WidgetCatalog) -> str:
     payload = _fingerprint_payload(catalog)
     blob = json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
     return hashlib.sha256(blob).hexdigest()
+
+
+def _repo_root() -> Path:
+    return Path(__file__).resolve().parent.parent
+
+
+def cache_dir() -> Path:
+    override = os.environ.get("PDF_PARSER_MAPPINGS_DIR")
+    if override:
+        return Path(override)
+    return _repo_root() / "mappings"
+
+
+def _mapping_path(fingerprint: str) -> Path:
+    return cache_dir() / f"{fingerprint}.mapping.json"
+
+
+def _schema_path(fingerprint: str) -> Path:
+    return cache_dir() / f"{fingerprint}.schema.json"
+
+
+def _cached_path(fingerprint: str) -> Path:
+    return cache_dir() / f"{fingerprint}.cached.json"
+
+
+def _index_path() -> Path:
+    return cache_dir() / "index.json"
+
+
+def _load_index() -> CacheIndex:
+    p = _index_path()
+    if not p.exists():
+        return CacheIndex(entries=[])
+    try:
+        return CacheIndex.model_validate_json(p.read_text())
+    except Exception:
+        return CacheIndex(entries=[])
+
+
+def _write_index(index: CacheIndex) -> None:
+    _index_path().write_text(index.model_dump_json(indent=2))
+
+
+def store(
+    fingerprint: str,
+    mapping: WidgetMapping,
+    schema: FormSchema,
+    source_pdf_basename: str,
+) -> None:
+    d = cache_dir()
+    d.mkdir(parents=True, exist_ok=True)
+    cached = CachedMapping(
+        form_fingerprint=fingerprint,
+        source_pdf_basename=source_pdf_basename,
+        created_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        mapping=mapping,
+        form_schema=schema,
+    )
+    _cached_path(fingerprint).write_text(cached.model_dump_json(indent=2))
+    _mapping_path(fingerprint).write_text(mapping.model_dump_json(indent=2))
+    _schema_path(fingerprint).write_text(schema.model_dump_json(indent=2))
+
+    index = _load_index()
+    index.entries = [e for e in index.entries if e.form_fingerprint != fingerprint]
+    index.entries.append(CacheIndexEntry(
+        form_fingerprint=fingerprint,
+        source_pdf_basename=source_pdf_basename,
+        created_at=cached.created_at,
+    ))
+    _write_index(index)
+
+
+def lookup(catalog: WidgetCatalog) -> Optional[CachedMapping]:
+    fingerprint = compute_form_fingerprint(catalog)
+    p = _cached_path(fingerprint)
+    if not p.exists():
+        return None
+    try:
+        return CachedMapping.model_validate_json(p.read_text())
+    except Exception:
+        return None

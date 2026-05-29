@@ -92,6 +92,38 @@ def test_fingerprint_detects_page_count_change():
     assert compute_form_fingerprint(one_page) != compute_form_fingerprint(two_page)
 
 
+def test_store_then_lookup_roundtrip():
+    import tempfile, os
+    from claims_parser.mapping_cache import (
+        compute_form_fingerprint, store, lookup, cache_dir,
+    )
+    from claims_parser.mapping_models import WidgetMapping
+    from claims_parser.schema_models import FormSchema
+
+    cat = _cat([_w("a"), _w("b", t="checkbox", on_value="Yes", xref=2)])
+    fp = compute_form_fingerprint(cat)
+    mapping = WidgetMapping(
+        file_name="x.pdf", model="gpt-5-mini", chunk_count=1,
+        bindings=[], unmapped_widget_field_names=[],
+    )
+    schema = FormSchema(form_title="x", sections=[], fields=[])
+
+    with tempfile.TemporaryDirectory() as td:
+        os.environ["PDF_PARSER_MAPPINGS_DIR"] = td
+        try:
+            assert lookup(cat) is None
+            store(fp, mapping, schema, source_pdf_basename="x.pdf")
+            cached = lookup(cat)
+            assert cached is not None
+            assert cached.form_fingerprint == fp
+            assert cached.source_pdf_basename == "x.pdf"
+            assert cached.mapping.file_name == "x.pdf"
+            index_path = cache_dir() / "index.json"
+            assert index_path.exists()
+        finally:
+            os.environ.pop("PDF_PARSER_MAPPINGS_DIR", None)
+
+
 if __name__ == "__main__":
     import sys
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
