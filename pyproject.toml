@@ -10,3 +10,11 @@ dependencies = [
     "openai>=1.50.0",
     "pymupdf>=1.24.0",
 ]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.31.0",
+    "jupyter>=1.1.1",
+    "nbclient>=0.10.2",
+    "nbformat>=5.10.4",
+]
