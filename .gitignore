@@ -30,6 +30,9 @@ env/
 # Source PDFs — kept locally only; may contain PHI when filled by downstream users
 input/
 
+# DB source-of-truth JSONs (may contain PHI)
+database/
+
 # Generated outputs — regeneratable artifacts from each pipeline run
 output/
 
