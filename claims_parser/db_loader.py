@@ -100,9 +100,57 @@ def _normalize_path(path: str) -> str:
     return out
 
 
-def db_schema_fingerprint(data: Any) -> str:
-    """Hash the set of leaf paths (ignoring list indices and values)."""
-    flat = flatten_db(data)
-    normed = {_normalize_path(k) for k in flat.keys()}
-    body = "\n".join(sorted(normed))
+def canonical_db_paths() -> list[str]:
+    """Return the canonical normalized DB paths derived from DBEnvelope.
+
+    Unlike flattening an instance, this is stable across cases — it doesn't
+    depend on whether lists are populated or empty. Use this as the path
+    set for both the fingerprint and the LLM resolver prompt.
+    """
+    from claims_parser.db_template_models import DBEnvelope
+
+    def _walk(model_cls, prefix: str, out: list[str]) -> None:
+        import typing as _t
+        try:
+            fields = model_cls.model_fields
+        except AttributeError:
+            out.append(prefix)
+            return
+        for name, info in fields.items():
+            key = f"{prefix}.{name}" if prefix else name
+            ann = info.annotation
+            origin = _t.get_origin(ann)
+            args = _t.get_args(ann)
+            if origin is list:
+                inner = args[0] if args else None
+                if inner is not None and hasattr(inner, "model_fields"):
+                    _walk(inner, key + "[]", out)
+                else:
+                    out.append(key + "[]")
+            elif hasattr(ann, "model_fields"):
+                _walk(ann, key, out)
+            else:
+                out.append(key)
+
+    paths: list[str] = []
+    _walk(DBEnvelope, "", paths)
+    # Strip "result." prefix and the envelope-level keys; the rest of the
+    # codebase treats the envelope-stripped `result` as the root.
+    out: list[str] = []
+    for p in paths:
+        if p.startswith("result."):
+            out.append(p[len("result."):])
+        elif "." not in p:
+            continue  # drop envelope-level scalars (success, message, executionTimeSec)
+    return sorted(set(out))
+
+
+def db_schema_fingerprint(data: Any = None) -> str:
+    """Hash the canonical key set of the DB schema.
+
+    The `data` argument is accepted but ignored: the schema fingerprint is
+    derived from DBEnvelope so it stays stable across cases regardless of
+    list cardinality.
+    """
+    body = "\n".join(canonical_db_paths())
     return hashlib.sha256(body.encode()).hexdigest()[:16]

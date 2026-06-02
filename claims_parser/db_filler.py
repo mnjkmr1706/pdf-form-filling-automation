@@ -75,7 +75,7 @@ def _resolve_value(r: Resolution, db: dict) -> Any:
         idx = r.service_line_index or 0
         if not r.paths:
             return None
-        path = r.paths[0].replace("{i}", str(idx))
+        path = r.paths[0].replace("{i}", str(idx)).replace("[]", f"[{idx}]")
         return db_path_get(db, path)
     if r.kind == "derived":
         d = r.derive

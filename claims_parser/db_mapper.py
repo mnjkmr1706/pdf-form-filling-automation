@@ -20,7 +20,12 @@ from typing import Optional
 
 from openai import OpenAI
 
-from claims_parser.db_loader import _normalize_path, db_schema_fingerprint, flatten_db
+from claims_parser.db_loader import (
+    _normalize_path,
+    canonical_db_paths,
+    db_schema_fingerprint,
+    flatten_db,
+)
 from claims_parser.db_mapping_models import (
     FieldMap,
     FieldResolution,
@@ -324,7 +329,7 @@ def resolve_form(
         except Exception:
             pass  # corrupt cache: fall through and rebuild
 
-    paths = sorted({_normalize_path(k) for k in flatten_db(db).keys()})
+    paths = canonical_db_paths()
     db_sample = _sample_values(db, paths)
 
     heuristic_hits: dict[str, FieldResolution] = {}
