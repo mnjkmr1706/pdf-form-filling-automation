@@ -42,6 +42,18 @@ from claims_parser.widget_mapper import (
     load_mapping,
 )
 from claims_parser.mapped_writer import write_mapped
+from claims_parser.mapping_cache import (
+    compute_form_fingerprint,
+    lookup as lookup_cached_mapping,
+    store as store_cached_mapping,
+    rebind_to_current_xrefs,
+    cache_dir as mapping_cache_dir,
+)
+from claims_parser.mapping_cache_models import (
+    CachedMapping,
+    CacheIndex,
+    CacheIndexEntry,
+)
 from claims_parser.db_loader import (
     load_db_json,
     flatten_db,
@@ -128,6 +140,15 @@ __all__ = [
     "save_mapping",
     "load_mapping",
     "write_mapped",
+    # mapping cache
+    "compute_form_fingerprint",
+    "lookup_cached_mapping",
+    "store_cached_mapping",
+    "rebind_to_current_xrefs",
+    "mapping_cache_dir",
+    "CachedMapping",
+    "CacheIndex",
+    "CacheIndexEntry",
     # db-driven fill
     "load_db_json",
     "flatten_db",

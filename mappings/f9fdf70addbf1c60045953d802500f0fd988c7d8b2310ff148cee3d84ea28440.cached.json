@@ -1,0 +1,1053 @@
+{
+  "form_fingerprint": "f9fdf70addbf1c60045953d802500f0fd988c7d8b2310ff148cee3d84ea28440",
+  "source_pdf_basename": "56900_reopening.pdf",
+  "created_at": "2026-05-29T12:16:53+00:00",
+  "mapping": {
+    "file_name": "56900_reopening.pdf",
+    "model": "gpt-5-mini",
+    "chunk_count": 1,
+    "bindings": [
+      {
+        "widget_field_name": "Contract Location",
+        "widget_xref": 228,
+        "semantic_field_id": "check_one",
+        "label_text": "Check one:",
+        "label_source": "text_line",
+        "label_polygon": [
+          0.2401,
+          3.0097,
+          0.9227,
+          3.0128,
+          0.9221,
+          3.1436,
+          0.2395,
+          3.1405
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "The printed prompt \"Check one:\" is the parent question immediately left of the four radio options and matches a DI text_line.",
+        "option_label": "Part A Kentucky",
+        "on_value": "0"
+      },
+      {
+        "widget_field_name": "Contract Location",
+        "widget_xref": 229,
+        "semantic_field_id": "check_one",
+        "label_text": "Check one:",
+        "label_source": "text_line",
+        "label_polygon": [
+          0.2401,
+          3.0097,
+          0.9227,
+          3.0128,
+          0.9221,
+          3.1436,
+          0.2395,
+          3.1405
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "The printed prompt \"Check one:\" is the parent question immediately left of the four radio options and matches a DI text_line.",
+        "option_label": "Part A Ohio",
+        "on_value": "1"
+      },
+      {
+        "widget_field_name": "Contract Location",
+        "widget_xref": 230,
+        "semantic_field_id": "check_one",
+        "label_text": "Check one:",
+        "label_source": "text_line",
+        "label_polygon": [
+          0.2401,
+          3.0097,
+          0.9227,
+          3.0128,
+          0.9221,
+          3.1436,
+          0.2395,
+          3.1405
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "The printed prompt \"Check one:\" is the parent question immediately left of the four radio options and matches a DI text_line.",
+        "option_label": "Home Health",
+        "on_value": "2"
+      },
+      {
+        "widget_field_name": "Contract Location",
+        "widget_xref": 224,
+        "semantic_field_id": "check_one",
+        "label_text": "Check one:",
+        "label_source": "text_line",
+        "label_polygon": [
+          0.2401,
+          3.0097,
+          0.9227,
+          3.0128,
+          0.9221,
+          3.1436,
+          0.2395,
+          3.1405
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "The printed prompt \"Check one:\" is the parent question immediately left of the four radio options and matches a DI text_line.",
+        "option_label": "Hospice",
+        "on_value": "3"
+      },
+      {
+        "widget_field_name": "Provider Name",
+        "widget_xref": 222,
+        "semantic_field_id": "provider_name",
+        "label_text": "Provider Name:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.2554,
+          3.5325,
+          3.4387,
+          3.5325,
+          3.4387,
+          3.7805,
+          0.2472,
+          3.7805
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget sits under the table heading and aligns with the table cell labeled \"Provider Name:\" in the DI table.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Tax ID",
+        "widget_xref": 220,
+        "semantic_field_id": "tax_id_last_5_digits",
+        "label_text": "Tax ID (last 5 digits):",
+        "label_source": "table_cell",
+        "label_polygon": [
+          3.4387,
+          3.5325,
+          8.2548,
+          3.5325,
+          8.2548,
+          3.7805,
+          3.4387,
+          3.7805
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The field aligns with the table cell labeled \"Tax ID (last 5 digits):\" in the DI table.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "PTAN",
+        "widget_xref": 218,
+        "semantic_field_id": "ptan",
+        "label_text": "PTAN:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.2472,
+          3.7805,
+          3.4387,
+          3.7805,
+          3.4387,
+          4.0368,
+          0.2472,
+          4.0368
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget is positioned next to the table cell labeled \"PTAN:\" and matches the DI table_cell.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "NPI",
+        "widget_xref": 216,
+        "semantic_field_id": "npi",
+        "label_text": "NPI:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          3.4387,
+          3.7805,
+          8.2548,
+          3.7805,
+          8.2548,
+          4.0368,
+          3.4387,
+          4.0368
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget aligns with the table cell labeled \"NPI:\" as detected in the DI table.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Address",
+        "widget_xref": 214,
+        "semantic_field_id": "address",
+        "label_text": "Address:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.2472,
+          4.0368,
+          3.4387,
+          4.0368,
+          3.4387,
+          4.4748,
+          0.2472,
+          4.4748
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The input box spans the row corresponding to the table cell labeled \"Address:\" in the DI hints.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Contact Name",
+        "widget_xref": 212,
+        "semantic_field_id": "contact_name",
+        "label_text": "Contact Name:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.2472,
+          4.4748,
+          3.4387,
+          4.4748,
+          3.4387,
+          4.7311,
+          0.2472,
+          4.7311
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget is adjacent to the table cell labeled \"Contact Name:\" in the DI table.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Contact Phone Number",
+        "widget_xref": 210,
+        "semantic_field_id": "contact_phone_number",
+        "label_text": "Contact Phone Number:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          3.4387,
+          4.4748,
+          8.2548,
+          4.4748,
+          8.2548,
+          4.7311,
+          3.4387,
+          4.7311
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget aligns with the table cell labeled \"Contact Phone Number:\" in the DI hints.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "DCN",
+        "widget_xref": 208,
+        "semantic_field_id": "document_control_number_dcn",
+        "label_text": "Document Control Number (DCN):",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.2551,
+          5.1215,
+          2.3552,
+          5.138,
+          2.3552,
+          5.3936,
+          0.2551,
+          5.3771
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget is placed next to the table cell labeled \"Document Control Number (DCN):\" in the DI table.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Beneficiary Medicare Number",
+        "widget_xref": 206,
+        "semantic_field_id": "beneficiary_medicare_number",
+        "label_text": "Beneficiary Medicare Number:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          2.3552,
+          5.138,
+          8.2357,
+          5.138,
+          8.2439,
+          5.3936,
+          2.3552,
+          5.3936
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget aligns with the table cell labeled \"Beneficiary Medicare Number:\" detected in the DI hints.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "DOS",
+        "widget_xref": 204,
+        "semantic_field_id": "dates_of_service_dos",
+        "label_text": "Dates of Service (DOS):",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.2551,
+          5.3771,
+          2.3552,
+          5.3936,
+          2.3552,
+          5.641,
+          0.2551,
+          5.641
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget falls under the table cell labeled \"Dates of Service (DOS):\" in the DI table.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "TOB",
+        "widget_xref": 202,
+        "semantic_field_id": "tob",
+        "label_text": "TOB:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          2.3552,
+          5.3936,
+          8.2439,
+          5.3936,
+          8.2521,
+          5.6493,
+          2.3552,
+          5.641
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget is adjacent to the table cell labeled \"TOB:\" in the DI hints.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Beneficiary Name",
+        "widget_xref": 200,
+        "semantic_field_id": "beneficiary_name",
+        "label_text": "Beneficiary Name:",
+        "label_source": "table_cell",
+        "label_polygon": [
+          0.2551,
+          5.641,
+          2.3552,
+          5.641,
+          2.3552,
+          5.8966,
+          0.2551,
+          5.8966
+        ],
+        "label_page": 1,
+        "confidence": 0.79,
+        "reasoning": "The widget aligns with the table cell labeled \"Beneficiary Name:\" in the DI table.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Reason for Request",
+        "widget_xref": 198,
+        "semantic_field_id": "reason_for_request",
+        "label_text": "Reason for Request",
+        "label_source": "text_line",
+        "label_polygon": [
+          0.3054,
+          6.1294,
+          1.5231,
+          6.1318,
+          1.5228,
+          6.2793,
+          0.3051,
+          6.2769
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "The long text box is headed by the printed \"Reason for Request\" line which matches a DI text_line.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Reqeusted by",
+        "widget_xref": 196,
+        "semantic_field_id": "requested_by",
+        "label_text": "Requested by:",
+        "label_source": "text_line",
+        "label_polygon": [
+          0.2408,
+          7.5405,
+          1.0591,
+          7.5461,
+          1.0581,
+          7.6937,
+          0.2397,
+          7.6881
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "The signature field is labeled by the printed \"Requested by:\" line immediately to its left in the DI text_lines.",
+        "option_label": null,
+        "on_value": null
+      },
+      {
+        "widget_field_name": "Date",
+        "widget_xref": 192,
+        "semantic_field_id": "date",
+        "label_text": "Date:",
+        "label_source": "text_line",
+        "label_polygon": [
+          6.053,
+          7.5491,
+          6.3628,
+          7.5513,
+          6.362,
+          7.6728,
+          6.0521,
+          7.6706
+        ],
+        "label_page": 1,
+        "confidence": 0.78,
+        "reasoning": "The small text field is labeled \"Date:\" which appears in the DI text_lines to the left of the widget.",
+        "option_label": null,
+        "on_value": null
+      }
+    ],
+    "unmapped_widget_field_names": []
+  },
+  "form_schema": {
+    "form_title": null,
+    "issuer": null,
+    "sections": [],
+    "fields": [
+      {
+        "field_id": "check_one",
+        "label": "Check one:",
+        "section": null,
+        "field_type": "radio_group",
+        "options": [
+          "Part A Kentucky",
+          "Part A Ohio",
+          "Home Health",
+          "Hospice"
+        ],
+        "format_hint": null,
+        "required": false,
+        "source_text": "Check one:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Contract Location",
+            "widget_xref": 228,
+            "semantic_field_id": "check_one",
+            "label_text": "Check one:",
+            "label_source": "text_line",
+            "label_polygon": [
+              0.2401,
+              3.0097,
+              0.9227,
+              3.0128,
+              0.9221,
+              3.1436,
+              0.2395,
+              3.1405
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "The printed prompt \"Check one:\" is the parent question immediately left of the four radio options and matches a DI text_line.",
+            "option_label": "Part A Kentucky",
+            "on_value": "0"
+          },
+          {
+            "widget_field_name": "Contract Location",
+            "widget_xref": 229,
+            "semantic_field_id": "check_one",
+            "label_text": "Check one:",
+            "label_source": "text_line",
+            "label_polygon": [
+              0.2401,
+              3.0097,
+              0.9227,
+              3.0128,
+              0.9221,
+              3.1436,
+              0.2395,
+              3.1405
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "The printed prompt \"Check one:\" is the parent question immediately left of the four radio options and matches a DI text_line.",
+            "option_label": "Part A Ohio",
+            "on_value": "1"
+          },
+          {
+            "widget_field_name": "Contract Location",
+            "widget_xref": 230,
+            "semantic_field_id": "check_one",
+            "label_text": "Check one:",
+            "label_source": "text_line",
+            "label_polygon": [
+              0.2401,
+              3.0097,
+              0.9227,
+              3.0128,
+              0.9221,
+              3.1436,
+              0.2395,
+              3.1405
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "The printed prompt \"Check one:\" is the parent question immediately left of the four radio options and matches a DI text_line.",
+            "option_label": "Home Health",
+            "on_value": "2"
+          },
+          {
+            "widget_field_name": "Contract Location",
+            "widget_xref": 224,
+            "semantic_field_id": "check_one",
+            "label_text": "Check one:",
+            "label_source": "text_line",
+            "label_polygon": [
+              0.2401,
+              3.0097,
+              0.9227,
+              3.0128,
+              0.9221,
+              3.1436,
+              0.2395,
+              3.1405
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "The printed prompt \"Check one:\" is the parent question immediately left of the four radio options and matches a DI text_line.",
+            "option_label": "Hospice",
+            "on_value": "3"
+          }
+        ]
+      },
+      {
+        "field_id": "provider_name",
+        "label": "Provider Name:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Provider Name:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Provider Name",
+            "widget_xref": 222,
+            "semantic_field_id": "provider_name",
+            "label_text": "Provider Name:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.2554,
+              3.5325,
+              3.4387,
+              3.5325,
+              3.4387,
+              3.7805,
+              0.2472,
+              3.7805
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget sits under the table heading and aligns with the table cell labeled \"Provider Name:\" in the DI table.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "tax_id_last_5_digits",
+        "label": "Tax ID (last 5 digits):",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Tax ID (last 5 digits):",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Tax ID",
+            "widget_xref": 220,
+            "semantic_field_id": "tax_id_last_5_digits",
+            "label_text": "Tax ID (last 5 digits):",
+            "label_source": "table_cell",
+            "label_polygon": [
+              3.4387,
+              3.5325,
+              8.2548,
+              3.5325,
+              8.2548,
+              3.7805,
+              3.4387,
+              3.7805
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The field aligns with the table cell labeled \"Tax ID (last 5 digits):\" in the DI table.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "ptan",
+        "label": "PTAN:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "PTAN:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "PTAN",
+            "widget_xref": 218,
+            "semantic_field_id": "ptan",
+            "label_text": "PTAN:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.2472,
+              3.7805,
+              3.4387,
+              3.7805,
+              3.4387,
+              4.0368,
+              0.2472,
+              4.0368
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget is positioned next to the table cell labeled \"PTAN:\" and matches the DI table_cell.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "npi",
+        "label": "NPI:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "NPI:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "NPI",
+            "widget_xref": 216,
+            "semantic_field_id": "npi",
+            "label_text": "NPI:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              3.4387,
+              3.7805,
+              8.2548,
+              3.7805,
+              8.2548,
+              4.0368,
+              3.4387,
+              4.0368
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget aligns with the table cell labeled \"NPI:\" as detected in the DI table.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "address",
+        "label": "Address:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Address:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Address",
+            "widget_xref": 214,
+            "semantic_field_id": "address",
+            "label_text": "Address:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.2472,
+              4.0368,
+              3.4387,
+              4.0368,
+              3.4387,
+              4.4748,
+              0.2472,
+              4.4748
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The input box spans the row corresponding to the table cell labeled \"Address:\" in the DI hints.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "contact_name",
+        "label": "Contact Name:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Contact Name:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Contact Name",
+            "widget_xref": 212,
+            "semantic_field_id": "contact_name",
+            "label_text": "Contact Name:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.2472,
+              4.4748,
+              3.4387,
+              4.4748,
+              3.4387,
+              4.7311,
+              0.2472,
+              4.7311
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget is adjacent to the table cell labeled \"Contact Name:\" in the DI table.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "contact_phone_number",
+        "label": "Contact Phone Number:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Contact Phone Number:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Contact Phone Number",
+            "widget_xref": 210,
+            "semantic_field_id": "contact_phone_number",
+            "label_text": "Contact Phone Number:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              3.4387,
+              4.4748,
+              8.2548,
+              4.4748,
+              8.2548,
+              4.7311,
+              3.4387,
+              4.7311
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget aligns with the table cell labeled \"Contact Phone Number:\" in the DI hints.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "document_control_number_dcn",
+        "label": "Document Control Number (DCN):",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Document Control Number (DCN):",
+        "widget_bindings": [
+          {
+            "widget_field_name": "DCN",
+            "widget_xref": 208,
+            "semantic_field_id": "document_control_number_dcn",
+            "label_text": "Document Control Number (DCN):",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.2551,
+              5.1215,
+              2.3552,
+              5.138,
+              2.3552,
+              5.3936,
+              0.2551,
+              5.3771
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget is placed next to the table cell labeled \"Document Control Number (DCN):\" in the DI table.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "beneficiary_medicare_number",
+        "label": "Beneficiary Medicare Number:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Beneficiary Medicare Number:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Beneficiary Medicare Number",
+            "widget_xref": 206,
+            "semantic_field_id": "beneficiary_medicare_number",
+            "label_text": "Beneficiary Medicare Number:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              2.3552,
+              5.138,
+              8.2357,
+              5.138,
+              8.2439,
+              5.3936,
+              2.3552,
+              5.3936
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget aligns with the table cell labeled \"Beneficiary Medicare Number:\" detected in the DI hints.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "dates_of_service_dos",
+        "label": "Dates of Service (DOS):",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Dates of Service (DOS):",
+        "widget_bindings": [
+          {
+            "widget_field_name": "DOS",
+            "widget_xref": 204,
+            "semantic_field_id": "dates_of_service_dos",
+            "label_text": "Dates of Service (DOS):",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.2551,
+              5.3771,
+              2.3552,
+              5.3936,
+              2.3552,
+              5.641,
+              0.2551,
+              5.641
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget falls under the table cell labeled \"Dates of Service (DOS):\" in the DI table.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "tob",
+        "label": "TOB:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "TOB:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "TOB",
+            "widget_xref": 202,
+            "semantic_field_id": "tob",
+            "label_text": "TOB:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              2.3552,
+              5.3936,
+              8.2439,
+              5.3936,
+              8.2521,
+              5.6493,
+              2.3552,
+              5.641
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget is adjacent to the table cell labeled \"TOB:\" in the DI hints.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "beneficiary_name",
+        "label": "Beneficiary Name:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Beneficiary Name:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Beneficiary Name",
+            "widget_xref": 200,
+            "semantic_field_id": "beneficiary_name",
+            "label_text": "Beneficiary Name:",
+            "label_source": "table_cell",
+            "label_polygon": [
+              0.2551,
+              5.641,
+              2.3552,
+              5.641,
+              2.3552,
+              5.8966,
+              0.2551,
+              5.8966
+            ],
+            "label_page": 1,
+            "confidence": 0.79,
+            "reasoning": "The widget aligns with the table cell labeled \"Beneficiary Name:\" in the DI table.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "reason_for_request",
+        "label": "Reason for Request",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Reason for Request",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Reason for Request",
+            "widget_xref": 198,
+            "semantic_field_id": "reason_for_request",
+            "label_text": "Reason for Request",
+            "label_source": "text_line",
+            "label_polygon": [
+              0.3054,
+              6.1294,
+              1.5231,
+              6.1318,
+              1.5228,
+              6.2793,
+              0.3051,
+              6.2769
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "The long text box is headed by the printed \"Reason for Request\" line which matches a DI text_line.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "requested_by",
+        "label": "Requested by:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Requested by:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Reqeusted by",
+            "widget_xref": 196,
+            "semantic_field_id": "requested_by",
+            "label_text": "Requested by:",
+            "label_source": "text_line",
+            "label_polygon": [
+              0.2408,
+              7.5405,
+              1.0591,
+              7.5461,
+              1.0581,
+              7.6937,
+              0.2397,
+              7.6881
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "The signature field is labeled by the printed \"Requested by:\" line immediately to its left in the DI text_lines.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      },
+      {
+        "field_id": "date",
+        "label": "Date:",
+        "section": null,
+        "field_type": "text",
+        "options": null,
+        "format_hint": null,
+        "required": false,
+        "source_text": "Date:",
+        "widget_bindings": [
+          {
+            "widget_field_name": "Date",
+            "widget_xref": 192,
+            "semantic_field_id": "date",
+            "label_text": "Date:",
+            "label_source": "text_line",
+            "label_polygon": [
+              6.053,
+              7.5491,
+              6.3628,
+              7.5513,
+              6.362,
+              7.6728,
+              6.0521,
+              7.6706
+            ],
+            "label_page": 1,
+            "confidence": 0.78,
+            "reasoning": "The small text field is labeled \"Date:\" which appears in the DI text_lines to the left of the widget.",
+            "option_label": null,
+            "on_value": null
+          }
+        ]
+      }
+    ]
+  }
+}
