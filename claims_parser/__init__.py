@@ -54,6 +54,28 @@ from claims_parser.mapping_cache_models import (
     CacheIndex,
     CacheIndexEntry,
 )
+from claims_parser.db_loader import (
+    load_db_json,
+    flatten_db,
+    db_path_get,
+    db_schema_fingerprint,
+)
+from claims_parser.db_mapping_models import (
+    Resolution,
+    OptionResolution,
+    FieldResolution,
+    FieldMap,
+    DerivedSpec,
+)
+from claims_parser.db_filler import fill_from_db
+from claims_parser.db_mapper import (
+    resolve_form,
+    save_fillmap,
+    load_fillmap,
+    compute_schema_fingerprint,
+    heuristic_resolve,
+)
+from claims_parser.db_template_filler import fill_db_template, save_filled_db
 
 __all__ = [
     # extraction
@@ -127,4 +149,22 @@ __all__ = [
     "CachedMapping",
     "CacheIndex",
     "CacheIndexEntry",
+    # db-driven fill
+    "load_db_json",
+    "flatten_db",
+    "db_path_get",
+    "db_schema_fingerprint",
+    "Resolution",
+    "OptionResolution",
+    "FieldResolution",
+    "FieldMap",
+    "DerivedSpec",
+    "fill_from_db",
+    "resolve_form",
+    "save_fillmap",
+    "load_fillmap",
+    "compute_schema_fingerprint",
+    "heuristic_resolve",
+    "fill_db_template",
+    "save_filled_db",
 ]
