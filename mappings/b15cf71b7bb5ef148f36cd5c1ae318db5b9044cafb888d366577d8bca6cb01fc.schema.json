@@ -1,0 +1,793 @@
+{
+  "form_title": null,
+  "issuer": null,
+  "sections": [],
+  "fields": [
+    {
+      "field_id": "todays_date",
+      "label": "Today's Date",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Today's Date",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.0",
+          "widget_xref": 130,
+          "semantic_field_id": "todays_date",
+          "label_text": "Today's Date",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3361,
+            2.5766,
+            1.7381,
+            2.5766,
+            1.7381,
+            2.7908,
+            0.3361,
+            2.7908
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The printed label \"Today's Date\" exactly matches the table cell OCR at the top-left of the form.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "members_id_number",
+      "label": "Member's ID Number",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Member's ID Number",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.1",
+          "widget_xref": 131,
+          "semantic_field_id": "members_id_number",
+          "label_text": "Member's ID Number",
+          "label_source": "table_cell",
+          "label_polygon": [
+            1.7381,
+            2.5766,
+            3.7773,
+            2.5766,
+            3.7694,
+            2.7908,
+            1.7381,
+            2.7908
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The widget is positioned under the table header that reads \"Member's ID Number\" in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "plan_type",
+      "label": "Plan Type",
+      "section": null,
+      "field_type": "checkbox",
+      "options": [
+        "Plan Type"
+      ],
+      "format_hint": null,
+      "required": false,
+      "source_text": "Plan Type",
+      "widget_bindings": [
+        {
+          "widget_field_name": "CB1.1",
+          "widget_xref": 163,
+          "semantic_field_id": "plan_type",
+          "label_text": "Plan Type",
+          "label_source": "table_cell",
+          "label_polygon": [
+            3.7773,
+            2.5766,
+            5.9281,
+            2.5766,
+            5.9281,
+            2.7908,
+            3.7694,
+            2.7908
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "This checkbox sits beside the table cell header \"Plan Type\" and the option text \"Medical\" appears adjacent to this specific box.",
+          "option_label": "Medical",
+          "on_value": "Medical"
+        }
+      ]
+    },
+    {
+      "field_id": "plan_type_2",
+      "label": "Plan Type",
+      "section": null,
+      "field_type": "checkbox",
+      "options": [
+        "Plan Type"
+      ],
+      "format_hint": null,
+      "required": false,
+      "source_text": "Plan Type",
+      "widget_bindings": [
+        {
+          "widget_field_name": "CB1.1",
+          "widget_xref": 160,
+          "semantic_field_id": "plan_type",
+          "label_text": "Plan Type",
+          "label_source": "table_cell",
+          "label_polygon": [
+            3.7773,
+            2.5766,
+            5.9281,
+            2.5766,
+            5.9281,
+            2.7908,
+            3.7694,
+            2.7908
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "This checkbox sits beside the table cell header \"Plan Type\" and the option text \"Dental\" appears adjacent to this specific box.",
+          "option_label": "Dental",
+          "on_value": "Dental"
+        }
+      ]
+    },
+    {
+      "field_id": "members_group_number_optional",
+      "label": "Member's Group Number (Optional)",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Member's Group Number (Optional)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.2",
+          "widget_xref": 132,
+          "semantic_field_id": "members_group_number_optional",
+          "label_text": "Member's Group Number (Optional)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            5.9281,
+            2.5766,
+            8.047,
+            2.5766,
+            8.047,
+            2.7908,
+            5.9281,
+            2.7908
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "The field is aligned with the table header reading \"Member's Group Number (Optional)\" in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "members_first_name",
+      "label": "Member's First Name",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Member's First Name",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.3",
+          "widget_xref": 133,
+          "semantic_field_id": "members_first_name",
+          "label_text": "Member's First Name",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3359,
+            3.1871,
+            2.7635,
+            3.1871,
+            2.7715,
+            3.4244,
+            0.3359,
+            3.4244
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The widget is located directly under the table cell labeled \"Member's First Name\" in the DI hints.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "members_last_name",
+      "label": "Member's Last Name",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Member's Last Name",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.4",
+          "widget_xref": 134,
+          "semantic_field_id": "members_last_name",
+          "label_text": "Member's Last Name",
+          "label_source": "table_cell",
+          "label_polygon": [
+            2.7635,
+            3.1871,
+            5.1356,
+            3.1871,
+            5.1356,
+            3.4244,
+            2.7715,
+            3.4244
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The widget aligns with the table header \"Member's Last Name\" detected in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "members_birthdate_mm_dd_yyyy",
+      "label": "Member's Birthdate (MM/DD/YYYY)",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Member's Birthdate (MM/DD/YYYY)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.5",
+          "widget_xref": 135,
+          "semantic_field_id": "members_birthdate_mm_dd_yyyy",
+          "label_text": "Member's Birthdate (MM/DD/YYYY)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            5.1356,
+            3.1871,
+            8.0392,
+            3.1871,
+            8.0392,
+            3.4244,
+            5.1356,
+            3.4244
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The widget is positioned beneath the table header \"Member's Birthdate (MM/DD/YYYY)\" from the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "provider_name",
+      "label": "Provider Name",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Provider Name",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.6",
+          "widget_xref": 136,
+          "semantic_field_id": "provider_name",
+          "label_text": "Provider Name",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3787,
+            3.8443,
+            1.1843,
+            3.8449,
+            1.1842,
+            3.9804,
+            0.41,
+            3.9798
+          ],
+          "label_page": 1,
+          "confidence": 0.77,
+          "reasoning": "The field lies under the printed table label \"Provider Name\" detected by the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "tin_npi",
+      "label": "TIN/NPI",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "TIN/NPI",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.7",
+          "widget_xref": 137,
+          "semantic_field_id": "tin_npi",
+          "label_text": "TIN/NPI",
+          "label_source": "table_cell",
+          "label_polygon": [
+            4.1647,
+            3.8445,
+            4.571,
+            3.8444,
+            4.571,
+            3.9789,
+            4.1648,
+            3.9791
+          ],
+          "label_page": 1,
+          "confidence": 0.77,
+          "reasoning": "The widget matches the table cell labeled \"TIN/NPI\" in the DI hints and is adjacent to that header.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "provider_group_if_applicable",
+      "label": "Provider Group (if applicable)",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Provider Group (if applicable)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.8",
+          "widget_xref": 138,
+          "semantic_field_id": "provider_group_if_applicable",
+          "label_text": "Provider Group (if applicable)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            6.0347,
+            3.8367,
+            7.5431,
+            3.8416,
+            7.5426,
+            3.9938,
+            6.0342,
+            3.9888
+          ],
+          "label_page": 1,
+          "confidence": 0.77,
+          "reasoning": "The widget is aligned with the table header \"Provider Group (if applicable)\" detected in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "contact_name_and_title",
+      "label": "Contact Name and Title",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Contact Name and Title",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.9",
+          "widget_xref": 139,
+          "semantic_field_id": "contact_name_and_title",
+          "label_text": "Contact Name and Title",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3787,
+            4.2376,
+            1.6159,
+            4.2367,
+            1.616,
+            4.3734,
+            0.4101,
+            4.3743
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The widget sits under the table cell labeled \"Contact Name and Title\" from the DI hints.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "contact_address_where_appeal_complaint_resolution_should_be_sent",
+      "label": "Contact Address (Where appeal/complaint resolution should be sent)",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Contact Address (Where appeal/complaint resolution should be sent)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.10",
+          "widget_xref": 140,
+          "semantic_field_id": "contact_address_where_appeal_complaint_resolution_should_be_sent",
+          "label_text": "Contact Address (Where appeal/complaint resolution should be sent)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.4085,
+            4.6257,
+            3.9069,
+            4.6247,
+            3.9069,
+            4.7773,
+            0.4085,
+            4.7783
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "The large address field is directly below the table header reading the full contact address phrase in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "contact_phone",
+      "label": "Contact Phone",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Contact Phone",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.11",
+          "widget_xref": 141,
+          "semantic_field_id": "contact_phone",
+          "label_text": "Contact Phone",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3496,
+            4.9915,
+            1.7388,
+            4.9915,
+            1.7468,
+            5.23,
+            0.3496,
+            5.23
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The widget is positioned under the table header \"Contact Phone\" recognized in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "contact_fax",
+      "label": "Contact Fax",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Contact Fax",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.12",
+          "widget_xref": 142,
+          "semantic_field_id": "contact_fax",
+          "label_text": "Contact Fax",
+          "label_source": "table_cell",
+          "label_polygon": [
+            1.7388,
+            4.9915,
+            3.6203,
+            4.9915,
+            3.6203,
+            5.23,
+            1.7468,
+            5.23
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The widget aligns with the DI table cell labeled \"Contact Fax\" immediately above it.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "contact_email_address",
+      "label": "Contact Email Address",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Contact Email Address",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.13",
+          "widget_xref": 143,
+          "semantic_field_id": "contact_email_address",
+          "label_text": "Contact Email Address",
+          "label_source": "table_cell",
+          "label_polygon": [
+            3.6203,
+            4.9915,
+            6.7402,
+            4.9915,
+            6.7402,
+            5.23,
+            3.6203,
+            5.23
+          ],
+          "label_page": 1,
+          "confidence": 0.79,
+          "reasoning": "The widget is below the table header \"Contact Email Address\" found in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "claim_id_number_s",
+      "label": "Claim ID Number (s)",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Claim ID Number (s)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.14",
+          "widget_xref": 144,
+          "semantic_field_id": "claim_id_number_s",
+          "label_text": "Claim ID Number (s)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3787,
+            6.0428,
+            1.8981,
+            6.0428,
+            1.8981,
+            6.2416,
+            0.3787,
+            6.2416
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "The widget is located under the table header \"Claim ID Number (s)\" in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "reference_number_authorization_number",
+      "label": "Reference Number/Authorization Number",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Reference Number/Authorization Number",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.15",
+          "widget_xref": 145,
+          "semantic_field_id": "reference_number_authorization_number",
+          "label_text": "Reference Number/Authorization Number",
+          "label_source": "table_cell",
+          "label_polygon": [
+            1.8981,
+            6.0428,
+            5.3267,
+            6.0428,
+            5.3267,
+            6.2416,
+            1.8981,
+            6.2416
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "The field aligns with the DI table cell header \"Reference Number/Authorization Number\" above it.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "service_date_s",
+      "label": "Service Date(s)",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Service Date(s)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.16",
+          "widget_xref": 146,
+          "semantic_field_id": "service_date_s",
+          "label_text": "Service Date(s)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            5.3267,
+            6.0428,
+            8.1189,
+            6.0428,
+            8.1189,
+            6.2416,
+            5.3267,
+            6.2416
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "The widget is placed under the table header \"Service Date(s)\" detected in the DI table cells.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "initial_denial_notification_date_s",
+      "label": "Initial Denial Notification Date(s)",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Initial Denial Notification Date(s)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.17",
+          "widget_xref": 147,
+          "semantic_field_id": "initial_denial_notification_date_s",
+          "label_text": "Initial Denial Notification Date(s)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3787,
+            6.4166,
+            1.8981,
+            6.4166,
+            1.8902,
+            6.6234,
+            0.3787,
+            6.6234
+          ],
+          "label_page": 1,
+          "confidence": 0.77,
+          "reasoning": "This field corresponds to the DI table cell labeled \"Initial Denial Notification Date(s)\" located just above it.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "reconsideration_denial_notification_date_s",
+      "label": "Reconsideration Denial Notification Date(s)",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Reconsideration Denial Notification Date(s)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.18",
+          "widget_xref": 148,
+          "semantic_field_id": "reconsideration_denial_notification_date_s",
+          "label_text": "Reconsideration Denial Notification Date(s)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            3.4493,
+            6.4166,
+            8.1189,
+            6.4166,
+            8.1189,
+            6.6234,
+            3.4493,
+            6.6234
+          ],
+          "label_page": 1,
+          "confidence": 0.77,
+          "reasoning": "The widget is under the DI table cell reading \"Reconsideration Denial Notification Date(s)\" to its right.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "cpt_hcpc_service_being_disputed",
+      "label": "CPT/HCPC/Service Being Disputed",
+      "section": null,
+      "field_type": "text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "CPT/HCPC/Service Being Disputed",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.19",
+          "widget_xref": 149,
+          "semantic_field_id": "cpt_hcpc_service_being_disputed",
+          "label_text": "CPT/HCPC/Service Being Disputed",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3787,
+            6.7904,
+            8.1189,
+            6.7904,
+            8.1189,
+            6.9734,
+            0.3787,
+            6.9734
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "The large field maps to the DI table cell labeled \"CPT/HCPC/Service Being Disputed\" spanning the form width.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    },
+    {
+      "field_id": "explanation_of_your_request_please_use_additional_pages_if_necessary",
+      "label": "Explanation of Your Request (Please use additional pages if necessary.)",
+      "section": null,
+      "field_type": "long_text",
+      "options": null,
+      "format_hint": null,
+      "required": false,
+      "source_text": "Explanation of Your Request (Please use additional pages if necessary.)",
+      "widget_bindings": [
+        {
+          "widget_field_name": "T.20",
+          "widget_xref": 128,
+          "semantic_field_id": "explanation_of_your_request_please_use_additional_pages_if_necessary",
+          "label_text": "Explanation of Your Request (Please use additional pages if necessary.)",
+          "label_source": "table_cell",
+          "label_polygon": [
+            0.3787,
+            7.1563,
+            8.1189,
+            7.1563,
+            8.1268,
+            7.3313,
+            0.3787,
+            7.3234
+          ],
+          "label_page": 1,
+          "confidence": 0.78,
+          "reasoning": "This free-text area is directly under the table cell header that exactly matches the long explanation prompt in the DI hints.",
+          "option_label": null,
+          "on_value": null
+        }
+      ]
+    }
+  ]
+}
